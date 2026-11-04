@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Breathing Matter 전시안내</title>
+<meta name="description" content="이인실 개인전 《Breathing Matter (숨쉬는 물질)》 · CICA 미술관 Gallery 3A · 2026. 11. 11 – 11. 15. 출품작을 고화질로 감상하고 작품 소개와 작가가 기록한 마테호른의 땅을 볼 수 있는 전시안내 페이지.">
+<meta property="og:title" content="Breathing Matter (숨쉬는 물질) · 이인실 개인전">
+<meta property="og:description" content="멀리서는 하나의 봉우리, 가까이 오르니 무수한 땅의 얼굴.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif+KR:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Cpath d='M4 27 L14 9 L16 6 L18 10 L28 27 Z' fill='none' stroke='%231B1B1B' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style>
+/* Layout: the printed leaflet carried onto a phone. White paper, one serif title face,
+   numbered section heads over a black rule. Works are grouped into the exhibition's three chapters;
+   the field record reads like a drawing's elevation column, highest photograph first.
+   Single light theme by choice, to match the print; the artwork viewer is the one dark surface. */
+:root{
+  --paper:#FFFFFF;
+  --ink:#1B1B1B;
+  --text:#2A2A2A;
+  --gray:#6B6B6B;
+  --hair:#DCDCD9;
+  --rule:#B5B5B0;
+  --plate:#F2F2EF;
+  --night:#0F0F0F;
+  --night-text:#EDEDEA;
+  --night-dim:#A9A9A4;
+  --serif:"Noto Serif KR",Georgia,"Times New Roman",serif;
+  --sans:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --italic:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --col:46rem;
+  color-scheme:light;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper); color:var(--text);
+  font-family:var(--sans); font-size:1rem; line-height:1.78; font-weight:400;
+  word-break:keep-all; overflow-wrap:break-word;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{
+  max-width:var(--col); margin-inline:auto;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+  padding-block:0;
+}
+img{display:block; max-width:100%; height:auto}
+p,h1,h2,h3,h4{margin:0}
+h1,h2,h3,h4{font-weight:inherit; text-wrap:balance}
+a{color:inherit; text-underline-offset:3px; text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.lb :focus-visible{outline-color:var(--night-text)}
+
+.label{font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gray); font-weight:500; line-height:1.5}
+.en-it{font-family:var(--italic); font-style:italic; font-weight:300; color:var(--gray); font-size:1.15rem; line-height:1.5}
+
+/* ---------- hero: the leaflet cover ---------- */
+.hero-img{display:block}
+.hero-img img{width:100%; aspect-ratio:5/4; object-fit:cover; background:var(--plate)}
+.hero-text{padding-block:1.5rem 2.5rem; display:grid; gap:1.2rem}
+.eyebrow{display:flex; justify-content:space-between; flex-wrap:wrap; gap:.3rem 1rem}
+h1{font-family:var(--serif); font-weight:400; color:var(--ink); font-size:clamp(2.6rem, 12vw, 5.6rem); line-height:1.04; letter-spacing:-.012em}
+h1 .ko{display:block; font-family:var(--sans); font-weight:300; font-size:clamp(1.45rem, 6.4vw, 2.3rem); line-height:1.3; letter-spacing:0; margin-top:.3rem}
+.hero-foot{display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:.8rem 1.5rem; padding-top:1rem; border-top:1px solid var(--ink)}
+.hero-foot p{display:grid; gap:.05rem; line-height:1.45}
+.hero-foot b{font-weight:500; color:var(--ink); font-size:.98rem; font-variant-numeric:tabular-nums}
+.hero-foot span{font-size:.82rem; color:var(--gray)}
+.hero-foot .r{text-align:right}
+.jump{display:flex; flex-wrap:wrap; gap:8px}
+.jump a{font-size:.88rem; color:var(--ink); text-decoration:none; border:1px solid var(--ink); padding:.5rem .95rem; line-height:1.3}
+.jump a:hover{background:var(--ink); color:var(--paper)}
+
+/* ---------- section heads, as in the leaflet ---------- */
+.section{padding-block:3rem 1rem; scroll-margin-top:8px}
+.sh{display:flex; align-items:baseline; flex-wrap:wrap; gap:.2rem .85rem; padding-bottom:.75rem; border-bottom:1px solid var(--ink); margin-bottom:1.7rem}
+.sh-no{font-size:.8rem; color:var(--gray); letter-spacing:.08em; font-variant-numeric:tabular-nums}
+.sh-t{font-family:var(--serif); font-weight:600; font-size:1.38rem; line-height:1.3; color:var(--ink)}
+.sh-en{font-size:.82rem; color:var(--gray)}
+
+.quote{font-family:var(--serif); font-weight:400; color:var(--ink); font-size:clamp(1.15rem, 5vw, 1.5rem); line-height:1.7}
+.quote + .en-it{margin-top:.45rem}
+.prose{display:grid; gap:1rem; margin-top:1.7rem; max-width:41rem}
+.prose p{font-size:.97rem}
+details.en-block{border-top:1px solid var(--hair); padding-top:.7rem; margin-top:.4rem}
+details.en-block summary{cursor:pointer; list-style:none; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gray); font-weight:500}
+details.en-block summary::-webkit-details-marker{display:none}
+details.en-block summary::before{content:"+ "}
+details.en-block[open] summary::before{content:"− "}
+details.en-block .inner{display:grid; gap:.8rem; margin-top:.7rem}
+details.en-block p{font-size:.92rem; color:var(--text); line-height:1.7}
+.more{justify-self:start; font-size:.88rem; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--ink); padding-bottom:.1rem; line-height:1.5}
+.more:hover{color:var(--gray); border-color:var(--gray)}
+
+/* the leaflet's Winter / Summer pair, and the note's Zermatt plate */
+.pair{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:1.8rem}
+.pair > *{min-width:0}
+.pair .zoom{display:block; background:var(--plate)}
+.pair .zoom img{width:100%; aspect-ratio:1200/738; object-fit:cover}
+.pair figcaption{display:grid; gap:.05rem; font-size:.78rem; line-height:1.5}
+.pair figcaption b{font-weight:500; color:var(--ink)}
+.note-fig{max-width:15rem; margin-top:1.6rem}
+.note-fig .zoom{display:block; background:var(--plate)}
+.note-fig .zoom img{width:100%}
+.note-fig figcaption b{font-weight:500; color:var(--ink)}
+
+/* the exhibition's two experiments */
+.exps{list-style:none; margin:1.8rem 0 1.4rem; padding:0; display:grid; border-top:1px solid var(--ink)}
+.exps a{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.15rem 1rem; padding:1rem 0; border-bottom:1px solid var(--hair); text-decoration:none}
+.exps .k{display:flex; align-items:baseline; gap:.5rem; font-size:.74rem; color:var(--gray)}
+.exps .k i{font-family:var(--italic); font-style:italic; font-size:1.12rem; color:var(--ink); letter-spacing:.01em}
+.exps .t{font-family:var(--serif); font-weight:600; font-size:1.12rem; color:var(--ink); line-height:1.4}
+.exps .w{font-size:.82rem; color:var(--gray); line-height:1.5}
+.exps .arr{grid-column:2; grid-row:1 / span 3; align-self:center; color:var(--ink)}
+.exps a:hover .t{text-decoration:underline}
+
+/* ---------- works at a glance ---------- */
+.works{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:1.7rem 12px}
+.works li{display:grid; grid-template-columns:minmax(0,1fr); gap:.55rem; align-content:start; min-width:0}
+.works .zoom{display:block; aspect-ratio:1; max-width:100%; min-width:0; overflow:hidden; background:var(--plate); padding:6%}
+.works .zoom img{width:100%; height:100%; object-fit:contain}
+.works .zoom.mosaic{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); grid-template-rows:repeat(2, minmax(0,1fr)); gap:3px}
+.works .zoom.mosaic img{width:100%; height:100%; min-width:0; min-height:0; object-fit:cover}
+.wc{display:grid; gap:.1rem}
+.wc .n{font-size:.72rem; color:var(--gray); letter-spacing:.08em; font-variant-numeric:tabular-nums}
+.wc .t{font-weight:500; color:var(--ink); font-size:.9rem; line-height:1.4; text-decoration:none}
+.wc .t:hover{text-decoration:underline}
+.wc .t small{display:block; font-weight:400; color:var(--gray); font-size:.82rem}
+.wc .m{font-size:.76rem; color:var(--gray); line-height:1.5}
+.size-note{margin-top:1.6rem; font-size:.76rem; color:var(--gray); line-height:1.6}
+
+/* zoom affordance on every enlargeable image */
+.zoom{position:relative; cursor:zoom-in}
+.zoom::after{content:"크게 보기"; position:absolute; right:8px; bottom:8px; font-size:.66rem; letter-spacing:.06em; line-height:1; padding:.4rem .5rem; background:rgba(255,255,255,.9); color:var(--ink); pointer-events:none}
+.works .zoom::after, .quad .zoom::after{content:"+"; font-size:.9rem; padding:.25rem .45rem; right:6px; bottom:6px}
+.tiles .zoom::after{content:none}
+
+/* ---------- chapters of the works ---------- */
+.ch{display:grid; gap:.75rem; padding-block:2.6rem 1rem; border-top:2px solid var(--ink); scroll-margin-top:8px}
+.ch.first{border-top:0; padding-top:0}
+.ch-k{display:flex; align-items:baseline; gap:.55rem; font-size:.76rem; color:var(--gray); letter-spacing:.04em}
+.ch-k i{font-family:var(--italic); font-style:italic; font-size:1.3rem; color:var(--ink); letter-spacing:.01em}
+.ch-t{font-family:var(--serif); font-weight:600; font-size:clamp(1.35rem, 5.6vw, 1.7rem); line-height:1.35; color:var(--ink)}
+.ch-d{font-size:.95rem; line-height:1.75; max-width:41rem}
+
+.piece{display:grid; gap:1.35rem; padding-block:2.4rem 2.6rem; scroll-margin-top:8px}
+.ch + .piece{padding-top:1.2rem}
+.piece + .piece{border-top:1px solid var(--hair)}
+.here-flag{display:none; align-items:center; gap:.55rem; font-size:.85rem; font-weight:500; color:var(--ink)}
+.here-flag::before{content:""; width:.55rem; height:.55rem; border-radius:50%; background:var(--ink)}
+.piece.is-here .here-flag{display:flex}
+
+.work{display:grid; gap:.25rem}
+.work .wno{font-size:.8rem; letter-spacing:.06em; color:var(--gray)}
+.work h4{font-family:var(--serif); font-weight:500; color:var(--ink); font-size:clamp(1.6rem, 6.8vw, 2.35rem); line-height:1.2; letter-spacing:-.005em}
+.work h4 small{display:block; font-family:var(--sans); font-weight:400; font-size:1rem; color:var(--gray); letter-spacing:0; margin-top:.3rem}
+.meta{margin-top:.5rem; font-size:.84rem; line-height:1.65; color:var(--gray); display:grid; gap:.1rem}
+.meta .award{color:var(--ink); font-weight:500}
+.meta .sz{color:var(--ink)}
+
+.body{display:grid; gap:.95rem; max-width:41rem}
+.pin{display:flex; align-items:baseline; font-weight:500; color:var(--ink); font-size:.98rem; line-height:1.5}
+.pin-tag{flex:none; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; font-weight:500; color:var(--ink); border:1px solid var(--ink); padding:.12rem .45rem; margin-right:.7rem; line-height:1.4; position:relative; top:-.1em}
+.pin-tag.pin-hidden{border-style:dashed; border-color:var(--gray); color:var(--gray)}
+
+figure{margin:0; display:grid; grid-template-columns:minmax(0,1fr); gap:.55rem; min-width:0}
+figcaption,.cap{font-size:.82rem; line-height:1.6; color:var(--gray)}
+.plate .zoom{display:block; background:var(--plate)}
+.plate .zoom img{width:100%}
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+.grid2 > *{min-width:0}
+.grid2 .zoom{display:block; background:var(--plate)}
+.grid2 .zoom img{width:100%}
+.grid2 figcaption{color:var(--ink); font-size:.8rem}
+.quad{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:6px}
+.quad .zoom{display:block; aspect-ratio:4/3; overflow:hidden; background:var(--plate)}
+.quad .zoom img{width:100%; height:100%; object-fit:cover}
+.sub{display:grid; gap:.9rem; padding-top:1.4rem; border-top:1px solid var(--hair)}
+.sub-h{display:flex; align-items:baseline; gap:.6rem; flex-wrap:wrap}
+.sub-h b{font-family:var(--serif); font-weight:600; color:var(--ink); font-size:1.05rem}
+.sub-h span{font-size:.78rem; color:var(--gray)}
+.back{font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gray); text-decoration:none; justify-self:start}
+.back:hover{color:var(--ink)}
+
+/* winter / summer compare */
+.compare{position:relative; overflow:hidden; aspect-ratio:1200/738; max-width:100%; background:var(--plate); touch-action:pan-y; cursor:ew-resize; user-select:none; -webkit-user-select:none}
+.compare img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none}
+.compare .top{clip-path:inset(0 calc(100% - var(--pos, 50%)) 0 0)}
+.compare .handle{position:absolute; top:0; bottom:0; left:var(--pos, 50%); width:2px; margin-left:-1px; background:var(--paper); box-shadow:0 0 0 1px rgba(0,0,0,.35); pointer-events:none}
+.compare .handle::after{content:""; position:absolute; top:50%; left:50%; width:22px; height:22px; margin:-11px 0 0 -11px; border-radius:50%; background:var(--paper); border:2px solid var(--ink)}
+.compare .lab{position:absolute; top:.5rem; padding:.25rem .5rem; font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; background:rgba(255,255,255,.92); color:var(--ink); pointer-events:none; line-height:1.3}
+.compare .lab.l{left:.5rem}
+.compare .lab.r{right:.5rem}
+.compare-ctl{display:flex; align-items:center; gap:.75rem}
+.compare-ctl label{font-size:.82rem; color:var(--gray); white-space:nowrap}
+.compare-ctl input{flex:1; min-width:0; accent-color:var(--ink)}
+
+/* reliefs */
+.reliefs{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+.reliefs > *{min-width:0}
+.reliefs > :first-child{grid-column:1 / -1}
+.reliefs .zoom{display:block; background:var(--plate)}
+.reliefs .zoom img{width:100%; aspect-ratio:5/4; object-fit:cover}
+
+/* Digital 01 video */
+.video video{display:block; width:100%; height:auto; aspect-ratio:16/9; background:var(--night)}
+
+/* ---------- field record: a contact sheet, highest photograph first ---------- */
+.tiles{list-style:none; margin:1.8rem 0 0; padding:0; display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:4px}
+.tiles li{min-width:0; display:grid}
+.tiles .zoom{display:block; aspect-ratio:4/3; overflow:hidden; background:var(--plate)}
+.tiles li:first-child{grid-column:span 2; grid-row:span 2}
+.tiles li:first-child .zoom{aspect-ratio:auto; height:100%}
+.tiles .zoom img{width:100%; height:100%; object-fit:cover; transition:opacity .2s}
+.tiles .zoom:hover img{opacity:.85}
+.field-note{margin-top:1rem; font-size:.76rem; color:var(--gray); line-height:1.6}
+
+/* ---------- installation views (filled after 11. 10) ---------- */
+.install{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+.install > *{min-width:0}
+.install .wide{grid-column:1 / -1}
+.ph{aspect-ratio:3/2; max-width:100%; background:var(--plate); border:1px dashed var(--rule); display:grid; place-content:center; gap:.2rem; text-align:center; padding:1rem}
+.install .wide .ph{aspect-ratio:16/9}
+.ph b{font-family:var(--italic); font-style:italic; font-weight:400; font-size:1.05rem; color:var(--gray)}
+.ph span{font-size:.74rem; color:var(--gray); letter-spacing:.04em}
+
+.voice{display:grid; gap:1.1rem}
+.voice .q{font-family:var(--serif); font-weight:400; color:var(--ink); font-size:clamp(1.45rem, 6vw, 2.05rem); line-height:1.45}
+
+/* footer, with the poster band repeated */
+.band-img img{width:100%; aspect-ratio:1200/366; object-fit:cover; background:var(--plate)}
+footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
+.foot-row{display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:.8rem 1.5rem; padding-top:1rem; border-top:1px solid var(--ink)}
+.foot-row p{font-size:.84rem; line-height:1.6}
+.foot-row b{font-weight:500; color:var(--ink)}
+.foot-row span{color:var(--gray)}
+.copy{font-size:.76rem; color:var(--gray)}
+
+/* ---------- artwork viewer ---------- */
+.lb[hidden]{display:none}
+.lb{position:fixed; inset:0; z-index:50; background:var(--night); color:var(--night-text);
+  display:grid; grid-template-rows:auto minmax(0,1fr) auto;
+  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+.lb-top{display:flex; justify-content:space-between; align-items:center; padding:.55rem 12px .55rem 16px}
+.lb-count{font-size:.78rem; letter-spacing:.1em; color:var(--night-dim); font-variant-numeric:tabular-nums}
+.lb-btn{font:inherit; font-size:.82rem; color:var(--night-text); background:transparent; border:1px solid rgba(237,237,234,.35); padding:.45rem .8rem; cursor:pointer; line-height:1.2; min-height:40px}
+.lb-btn:hover{border-color:var(--night-text)}
+.lb-stage{position:relative; min-height:0; display:grid; place-items:center; padding:0 8px; touch-action:pan-y pinch-zoom}
+.lb-stage img{max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; user-select:none; -webkit-user-select:none}
+.lb-nav{position:absolute; top:50%; transform:translateY(-50%); width:44px; height:64px; display:grid; place-items:center; background:rgba(15,15,15,.55); color:var(--night-text); border:0; font-size:1.4rem; cursor:pointer}
+.lb-nav.prev{left:0}
+.lb-nav.next{right:0}
+.lb-cap{padding:.8rem 16px 1.1rem; display:grid; gap:.25rem}
+.lb-cap .t{font-family:var(--serif); font-weight:500; font-size:1.08rem; color:var(--night-text); line-height:1.4}
+.lb-cap .m{font-size:.8rem; color:var(--night-dim); line-height:1.55}
+.lb-cap a{font-size:.84rem; color:var(--night-text); justify-self:start; margin-top:.3rem}
+.lb-load{position:absolute; bottom:10px; left:50%; transform:translateX(-50%); font-size:.72rem; color:var(--night-dim); letter-spacing:.08em}
+
+@media (min-width:760px){
+  .hero-img img{aspect-ratio:3864/1180}
+  .hero-text{padding-block:2.4rem 3.2rem}
+  .works{grid-template-columns:repeat(4, minmax(0,1fr))}
+  .exps{grid-template-columns:1fr 1fr; column-gap:24px}
+  .piece{padding-block:3.2rem 3.4rem; gap:1.7rem}
+  .tiles{grid-template-columns:repeat(8, minmax(0,1fr)); gap:5px}
+}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} .tiles .zoom img{transition:none} }
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <picture class="hero-img">
+    <source media="(min-width: 760px)" srcset="img/band-m.jpg 1200w, img/band-l.jpg 2400w" sizes="100vw">
+    <img src="img/cover-m.jpg" srcset="img/cover-s.jpg 480w, img/cover-m.jpg 900w, img/cover-l.jpg 1800w" sizes="100vw" width="900" height="1200" fetchpriority="high" alt="Matterhorn Monolith_Physical 40의 부조 캔버스들을 위에서 본 흑백 이미지. 눈, 물길, 암석의 결이 칸마다 다르다.">
+  </picture>
+  <div class="wrap hero-text">
+    <p class="eyebrow label"><span>CICA Museum · Gallery 3A</span><span>Solo Exhibition</span></p>
+    <h1>Breathing Matter<span class="ko">숨쉬는 물질</span></h1>
+    <div class="hero-foot">
+      <p><b>이인실 개인전</b><span>Insil Lee Solo Exhibition</span></p>
+      <p class="r"><b>2026. 11. 11 – 11. 15</b><span>CICA 미술관 Gallery 3A, 김포</span></p>
+    </div>
+    <nav class="jump" aria-label="바로가기"><a href="#works">출품작 한눈에 보기</a><a href="#detail">작품 소개</a><a href="#field">땅의 기록</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="section wrap" id="about" aria-labelledby="h-about">
+  <div class="sh"><span class="sh-no">01</span><h2 class="sh-t" id="h-about">전시 소개</h2><span class="sh-en">About the Exhibition</span></div>
+  <p class="quote">멀리서는 하나의 봉우리, 가까이 오르니 무수한 땅의 얼굴.<br>한 사람의 삶도 그렇지 않을까.</p>
+  <p class="en-it">One peak from afar; rising closer, the countless faces of the land.<br>Isn’t a single life the same?</p>
+  <div class="prose">
+    <p>《Breathing Matter(숨쉬는 물질)》는 ‘같은 대상이라도 보는 거리에 따라 진실은 달라지지 않을까’라는 물음에서 출발한다. 엽서 속 마테호른은 눈 덮인 하나의 삼각 봉우리다. 그러나 작가가 케이블카를 타고 해발 약 4,000m의 전망대까지 오르내리며 실제로 마주한 산은 달랐다. 만년설과 빙하, 녹아내리는 눈, 드러난 암석, 초원과 숲까지, 고도마다 전혀 다른 땅이 한 산 안에 함께 있었다.</p>
+    <p>작가는 멀리서 품은 생각(관념, Solid)과 가까이 다가가 발견한 모습(실재, Hidden) 사이의 경계를 ‘숨쉬는 경계(Breathing Boundaries)’라 부른다. 작가에게 이 경계는 둘 사이를 오가는 가능성의 통로다. 이번 전시는 이 생각을 마테호른이라는 한 장소에서 두 가지 실험으로 풀어낸다.</p>
+    <p>첫 번째 실험 ‘조건(Condition)’은 같은 산을 서로 다른 조건에서 그린 회화다. 「Matterhorn I_Winter」는 가 보기 전 사진 한 장을 보고 그린 겨울의 산이고, 「Matterhorn IV_Summer」는 직접 다녀온 뒤 같은 자리에서 바라본 여름의 산이다. 두 그림을 나란히 놓으면, 같은 대상이 계절과 경험에 따라 얼마나 다르게 보이는지 드러난다.</p>
+  </div>
+  <div class="pair" role="group" aria-label="같은 산의 겨울과 여름">
+    <figure><a class="zoom" href="img/winter-l.jpg" data-m="img/winter-m.jpg" data-group="pair" data-title="Matterhorn I_Winter, 2024" data-meta="가 보기 전, 사진 한 장으로 그린 겨울"><img src="img/winter-m.jpg" srcset="img/winter-s.jpg 640w, img/winter-m.jpg 1200w" sizes="(min-width: 760px) 350px, calc(50vw - 21px)" width="1200" height="738" loading="lazy" decoding="async" alt="Matterhorn I_Winter"></a><figcaption><b>Matterhorn I_Winter, 2024</b><span>가 보기 전, 사진 한 장으로 그린 겨울</span></figcaption></figure>
+    <figure><a class="zoom" href="img/summer-l.jpg" data-m="img/summer-m.jpg" data-group="pair" data-title="Matterhorn IV_Summer, 2026" data-meta="직접 걸어 본 뒤 그린 여름"><img src="img/summer-m.jpg" srcset="img/summer-s.jpg 640w, img/summer-m.jpg 1200w" sizes="(min-width: 760px) 350px, calc(50vw - 21px)" width="1200" height="738" loading="lazy" decoding="async" alt="Matterhorn IV_Summer"></a><figcaption><b>Matterhorn IV_Summer, 2026</b><span>직접 걸어 본 뒤 그린 여름</span></figcaption></figure>
+  </div>
+  <div class="prose">
+    <p>두 번째 실험 ‘거리(Distance)’는 멀리서는 하나로 보이던 산을 가까이 들여다본다. 작가는 고도마다 사진으로 기록한 땅을 3호 캔버스 40점의 부조 「Physical 40」으로 다시 쌓아 올렸다. 건축 엔지니어로 일하며 익숙해진 핸디코트, 규사, 에폭시 레진 같은 건축 재료와, 예술가로서 만난 먹, 한지, 목탄 같은 미술 재료가 함께 쓰였다. 같은 사진들은 부조 프레임 안에서 흐르는 흑백 영상 「Digital 01」이 되고, 목탄 습작 「Studies」로도 그려졌다.</p>
+    <p>전시의 마지막 작품 「봉투 속 체르마트」는 작가의 대표 연작 「봉투 속 도시」의 신작이다. 천혜의 자연으로 알려진 체르마트의 풍경을 ‘세계의 금고’라 불리는 스위스 금융가의 손이 쥔 봉투 속에 담아, 가장 순수하다고 믿는 풍경의 이면을 보여 준다. 이 모든 실험을 위해 작가는 처음으로 평면 회화를 넘어 물질을 겹겹이 쌓아 올린 부조에 도전했다. 전시 제목 ‘숨쉬는 물질’은 여기에서 나왔다.</p>
+  </div>
+  <ul class="exps">
+    <li><a href="#ch-condition"><span class="k"><i>Condition</i>조건</span><span class="t">같은 산, 다른 시선</span><span class="w">01 – 04 · Matterhorn I – IV</span><span class="arr" aria-hidden="true">→</span></a></li>
+    <li><a href="#ch-distance"><span class="k"><i>Distance</i>거리</span><span class="t">하나의 봉우리, 무수한 땅</span><span class="w">05 – 07 · Matterhorn Monolith</span><span class="arr" aria-hidden="true">→</span></a></li>
+  </ul>
+  <details class="en-block"><summary>English</summary><div class="inner">
+    <p>Breathing Matter begins with a question: might the truth of the same thing change with the distance from which we look at it? On a postcard, the Matterhorn is a single snow-covered triangular peak. But the mountain the artist met as she rode cable cars up to an observation deck at about 4,000 meters and back was different. Eternal snow and glaciers, melting snow, bare rock, meadows and forests: at each altitude an entirely different ground, all within one mountain.</p>
+    <p>The artist calls the boundary between the idea held from afar (Solid) and the reality found up close (Hidden) a breathing boundary. For her it is a passage of possibility that runs both ways. This exhibition explores that idea at a single place, the Matterhorn, through two experiments.</p>
+    <p>The first experiment, Condition, consists of paintings of the same mountain made under different conditions. Matterhorn I_Winter is the winter mountain painted from a single photograph before she had ever been there; Matterhorn IV_Summer is the summer mountain seen from the same spot after her visit. Side by side, the two paintings show how differently the same subject appears with the season and with experience.</p>
+    <p>The second experiment, Distance, looks closely at a mountain that appears as one from afar. The artist rebuilt the ground she had photographed at each altitude as forty relief canvases, Physical 40, using construction materials familiar from her years as an architectural engineer, such as joint compound, silica sand and epoxy resin, together with art materials she came to as an artist, such as ink, hanji and charcoal. The same photographs became a black-and-white video playing inside a relief frame, Digital 01, and a set of charcoal drawings, Studies.</p>
+    <p>The exhibition closes with Zermatt in Bag, a new work in her signature City in Bag series. It places Zermatt’s celebrated natural landscape inside an envelope held by the hand of Swiss finance, long called the world’s vault, revealing the other side of the purest-seeming landscape. To carry out these experiments, the artist moved beyond flat painting for the first time, into reliefs built from layered matter. The title Breathing Matter comes from this.</p>
+  </div></details>
+</section>
+
+<section class="section wrap" id="statement" aria-labelledby="h-statement">
+  <div class="sh"><span class="sh-no">02</span><h2 class="sh-t" id="h-statement">작가노트</h2><span class="sh-en">Artist Statement</span></div>
+  <div class="prose" style="margin-top:0">
+    <p>멀리서 본 마테호른은 하나의 삼각 봉우리였다. 스위스에 있던 언니가 보내준 사진 한 장으로 나는 「Matterhorn I_Winter」를 그렸다. 가보지 않았지만 이미 안다고 믿었던 산이었다.</p>
+    <p>그림을 그린 뒤 그곳을 찾았을 때, 나는 내 그림 속으로 걸어 들어간 듯한 착각에 빠졌다. 그리고 케이블카로 해발 4,000m 가까이 오르는 동안 만년설과 빙하, 녹아 흘러내리는 눈, 드러난 암석, 다시 펼쳐진 초원과 숲을 만났다. 하나라고 믿었던 산은, 같은 시간 같은 장소에 존재한다고 믿기 어려울 만큼 다양한 얼굴을 한 무수한 물질이었다.</p>
+    <p>모든 대상이 그렇다. 멀리서는 관념 속에 고정된 하나의 형상이지만, 가까이 다가가면 생각지 못한 이면이 드러난다. 그래서 나는 무엇이든 서둘러 하나의 이미지로 프레임을 씌우지 않으려 한다.</p>
+    <p>건축 엔지니어로 17년을 일하며 손에 익은 재료, 도시를 짓는 핸디코트와 모래로 그 산의 땅들을 다시 쌓아 올렸다. 「봉투 속 체르마트」에서는 가장 깨끗한 풍경을 담은 봉투를, ‘세계의 금고’라 불려 온 나라의 금융인 손에 쥐여 주었다.</p>
+    <p>물질은 멈춰 있지 않다. 눈은 녹아 물이 되고, 물은 바위를 깎고, 그 위로 다시 풀이 자란다. 한 사람의 삶도 그렇지 않을까.</p>
+  </div>
+  <details class="en-block"><summary>English</summary><div class="inner">
+    <p>From afar, the Matterhorn was a single triangular peak. I painted Matterhorn I_Winter from one photograph my sister sent me from Switzerland: a mountain I had never visited, yet believed I knew.</p>
+    <p>When I went there after painting it, I felt as though I had walked into my own painting. Riding the cable car toward 4,000 meters, I met eternal snow and glaciers, melting snow, bare rock, and meadows and forests growing back. The mountain I had believed to be one thing was countless kinds of matter, its faces so varied it was hard to believe they shared one time and place.</p>
+    <p>Everything is like this. From afar, a thing is a single fixed image; come close, and unexpected sides appear. So I try not to frame anything too quickly.</p>
+    <p>With joint compound and sand, the materials that build cities, familiar to my hands from seventeen years as an architectural engineer, I rebuilt the land of that mountain. In Zermatt in Bag, the envelope holding the purest landscape sits in the hand of a financier from a country long called the world’s vault.</p>
+    <p>Matter never stands still. Snow melts into water, water carves rock, and grass grows again on the stone. Isn’t a single life the same?</p>
+  </div></details>
+</section>
+
+<section class="section wrap" id="artist" aria-labelledby="h-artist">
+  <div class="sh"><span class="sh-no">03</span><h2 class="sh-t" id="h-artist">작가 소개</h2><span class="sh-en">Artist</span></div>
+  <div class="prose" style="margin-top:0">
+    <p>이인실(b.1981)은 건축 엔지니어에서 출발해 회화로 작업을 확장해 온 작가다. 한국과 미국에서 건축을 공부하고 17년간 건축 엔지니어로 일하며 길러 온 구조적 시선과 재료 감각으로, 멀리서 품는 관념(Solid)과 가까이에서 드러나는 실재(Hidden) 사이의 경계를 탐구한다. 먹과 수채, 목탄, 유화, 알코올잉크에서 건축 재료로 쌓은 부조와 디지털 영상에 이르기까지 매체의 폭을 넓혀 왔다.</p>
+    <p>2025년 첫 개인전 《Breathing Boundaries(숨쉬는 경계)》(몽고트 갤러리)를 열었고, 2026년 갤러리 이트리움 Discovery Artist로 선정되어 기획초청전 《INSIDE &amp; OUTSIDE》 Part 1 ‘Beyond City in Bag’을 가졌다. 2026년 대한민국현대미술대전(KMAF) 특선과 아트코리아 국제미술대전 한국미술국제교류협회 이사장상을 수상했다.</p>
+    <p>작가는 경계를 규정하지 않고 재료와 기법을 한정하지 않으며, 미술과 건축 사이를 오가는 실험을 이어 갈 계획이다. 「봉투 속 도시」 연작을 따라 도시마다 관념과 실재를 마주 세우고, 그 사이에서 찾은 숨쉬는 경계의 원리를 다양한 방식으로 풀어낼 예정이다.</p>
+  </div>
+  <details class="en-block"><summary>English</summary><div class="inner">
+    <p>Insil Lee (b. 1981) moved from architectural engineering into painting. After studying architecture in Korea and the United States, she worked as an architectural engineer for seventeen years, and from the structural eye and feel for materials gained there she explores the boundary between the idea held from afar (Solid) and the reality revealed up close (Hidden). Her media range from ink, watercolor, charcoal, oil and alcohol ink to reliefs built from construction materials and digital video.</p>
+    <p>She held her first solo exhibition, Breathing Boundaries, at Mongoat Gallery, Seoul, in 2025, and was selected as a 2026 Discovery Artist by Gallery Etrium for INSIDE &amp; OUTSIDE Part 1: Beyond City in Bag. Her awards include the Special Selection at the Korean Modern Art Festival (KMAF) and the Chairperson’s Award at the Art Korea International Art Exhibition (both 2026).</p>
+    <p>She plans to continue experimenting across art and architecture without fixing boundaries or limiting materials and techniques. Following City in Bag from city to city, she will set idea against reality in each place and give form to the principle of breathing boundaries she finds there.</p>
+  </div></details>
+</section>
+
+<section class="section wrap" id="works" aria-labelledby="h-works">
+  <div class="sh"><span class="sh-no">04</span><h2 class="sh-t" id="h-works">출품작</h2><span class="sh-en">Works · 8 works, 50 pieces</span></div>
+  <ul class="works">
+    <li><a class="zoom" href="img/winter-l.jpg" data-m="img/winter-m.jpg" data-group="works" data-title="Matterhorn I_Winter" data-meta="2024 · 캔버스에 잉크·유화 · 130×80cm (60호)" data-sheet="#winter"><img src="img/winter-m.jpg" srcset="img/winter-s.jpg 640w, img/winter-m.jpg 1200w, img/winter-l.jpg 2400w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="738" loading="lazy" decoding="async" alt="Matterhorn I_Winter"></a>
+      <div class="wc"><span class="n">01</span><a class="t" href="#winter">Matterhorn I_Winter</a><span class="m">2024 · 잉크·유화 · 130×80cm</span></div></li>
+    <li><a class="zoom" href="img/hellvalley-l.jpg" data-m="img/hellvalley-m.jpg" data-group="works" data-title="Matterhorn II_Hell Valley (지옥계곡)" data-meta="2023 · 캔버스에 잉크·유화 · 65×53cm (15호)" data-sheet="#hellvalley"><img src="img/hellvalley-m.jpg" srcset="img/hellvalley-s.jpg 640w, img/hellvalley-m.jpg 1200w, img/hellvalley-l.jpg 2400w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="974" loading="lazy" decoding="async" alt="Matterhorn II_Hell Valley 지옥계곡"></a>
+      <div class="wc"><span class="n">02</span><a class="t" href="#hellvalley">Matterhorn II_Hell Valley<small>지옥계곡</small></a><span class="m">2023 · 잉크·유화 · 65×53cm</span></div></li>
+    <li><a class="zoom" href="img/eagle-l.jpg" data-m="img/eagle-m.jpg" data-group="works" data-title="Matterhorn III_Eagle’s Rebirth (독수리 환생)" data-meta="2025 (2026년 재작업) · 캔버스에 잉크·유화 · 80×130cm (60호)" data-sheet="#eagle"><img src="img/eagle-m.jpg" srcset="img/eagle-s.jpg 390w, img/eagle-m.jpg 731w, img/eagle-l.jpg 1463w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="731" height="1200" loading="lazy" decoding="async" alt="Matterhorn III_Eagle’s Rebirth 독수리 환생"></a>
+      <div class="wc"><span class="n">03</span><a class="t" href="#eagle">Matterhorn III_Eagle’s Rebirth<small>독수리 환생</small></a><span class="m">2025 (2026 재작업) · 잉크·유화 · 80×130cm</span></div></li>
+    <li><a class="zoom" href="img/summer-l.jpg" data-m="img/summer-m.jpg" data-group="works" data-title="Matterhorn IV_Summer" data-meta="2026 · 캔버스에 잉크·유화 · 130×80cm (60호)" data-sheet="#summer"><img src="img/summer-m.jpg" srcset="img/summer-s.jpg 640w, img/summer-m.jpg 1200w, img/summer-l.jpg 2290w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="738" loading="lazy" decoding="async" alt="Matterhorn IV_Summer"></a>
+      <div class="wc"><span class="n">04</span><a class="t" href="#summer">Matterhorn IV_Summer</a><span class="m">2026 · 잉크·유화 · 130×80cm</span></div></li>
+    <li><a class="zoom" href="img/physical-l.jpg" data-m="img/physical-m.jpg" data-group="works" data-title="Matterhorn Monolith_Physical 40" data-meta="2026 · 캔버스에 혼합재료 (핸디코트, 모델링 페이스트, 젤스톤, 규사, 에폭시 레진, 목탄, 한지, 먹) · 27.3×22cm (3호, 가로형) 각 × 40점" data-sheet="#physical"><img src="img/physical-m.jpg" srcset="img/physical-s.jpg 640w, img/physical-m.jpg 1200w, img/physical-l.jpg 2400w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="939" loading="lazy" decoding="async" alt="Matterhorn Monolith_Physical 40"></a>
+      <div class="wc"><span class="n">05</span><a class="t" href="#physical">Matterhorn Monolith_Physical 40</a><span class="m">2026 · 혼합재료 부조 · 27.3×22cm × 40점</span></div></li>
+    <li><a class="zoom" href="img/digital-1-l.jpg" data-m="img/digital-1-m.jpg" data-group="works" data-title="Matterhorn Monolith_Digital 01" data-meta="2026 · 혼합재료 부조 프레임, 11인치 태블릿, 단채널 디지털 영상 (흑백, 사운드, 4분 19초, 반복 재생) · 30×22cm (프레임 포함)" data-sheet="#digital"><img src="img/digital-1-m.jpg" srcset="img/digital-1-s.jpg 640w, img/digital-1-m.jpg 1200w, img/digital-1-l.jpg 2400w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="900" loading="lazy" decoding="async" alt="Matterhorn Monolith_Digital 01"></a>
+      <div class="wc"><span class="n">06</span><a class="t" href="#digital">Matterhorn Monolith_Digital 01</a><span class="m">2026 · 부조 프레임, 디지털 영상 · 30×22cm</span></div></li>
+    <li><a class="zoom mosaic" href="img/study-1-l.jpg" data-m="img/study-1-m.jpg" data-group="works" data-title="Matterhorn Monolith_Studies (1/4)" data-meta="2026 · 캔버스 천에 목탄, 액자 · 각 27.3×22cm (3호) × 4점 · 액자 포함 39.3×36cm (2점), 39.3×39.3cm (2점)" data-sheet="#studies" aria-label="Matterhorn Monolith_Studies, 네 점"><img src="img/study-1-s.jpg" width="640" height="480" loading="lazy" decoding="async" alt=""><img src="img/study-2-s.jpg" width="640" height="480" loading="lazy" decoding="async" alt=""><img src="img/study-3-s.jpg" width="640" height="480" loading="lazy" decoding="async" alt=""><img src="img/study-4-s.jpg" width="640" height="480" loading="lazy" decoding="async" alt=""></a>
+      <div class="wc"><span class="n">07</span><a class="t" href="#studies">Matterhorn Monolith_Studies</a><span class="m">2026 · 목탄 · 27.3×22cm × 4점<br>액자 포함 39.3×36cm, 39.3×39.3cm</span></div></li>
+    <li><a class="zoom" href="img/zermatt-l.jpg" data-m="img/zermatt-m.jpg" data-group="works" data-title="봉투 속 체르마트 Zermatt in Bag" data-meta="2026 · 장지에 먹·수채 · 50×65cm (15호)" data-sheet="#zermatt"><img src="img/zermatt-m.jpg" srcset="img/zermatt-s.jpg 490w, img/zermatt-m.jpg 919w, img/zermatt-l.jpg 1837w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="919" height="1200" loading="lazy" decoding="async" alt="봉투 속 체르마트 Zermatt in Bag"></a>
+      <div class="wc"><span class="n">08</span><a class="t" href="#zermatt">봉투 속 체르마트<small>Zermatt in Bag</small></a><span class="m">2026 · 장지에 먹·수채 · 50×65cm</span></div></li>
+  </ul>
+  <p class="size-note">이미지를 누르면 크게 볼 수 있고, 작품명을 누르면 해당 작품 소개로 이동합니다. 크기는 가로×세로이며 Physical 40과 Studies는 1점 기준, Digital 01은 프레임을 포함한 크기입니다.</p>
+</section>
+
+<section class="section wrap" id="detail" aria-labelledby="h-detail">
+  <div class="sh"><span class="sh-no">05</span><h2 class="sh-t" id="h-detail">작품 소개</h2><span class="sh-en">About the Works</span></div>
+
+  <!-- Chapter: Condition -->
+  <div class="ch first" id="ch-condition">
+    <p class="ch-k"><i>Condition</i>조건</p>
+    <h3 class="ch-t">같은 산, 다른 시선</h3>
+    <p class="ch-d">같은 산을 서로 다른 조건에서 그린 회화 연작이다. 겨울과 여름, 방문 전과 후로 계절과 경험을 달리해 그린 그림을 나란히 놓고, 같은 대상이 조건에 따라 어떻게 달리 보이는지 살핀다.</p>
+    <a class="more" href="#summer">Winter와 Summer 겹쳐 보기 →</a>
+  </div>
+
+  <article class="piece" id="winter" aria-labelledby="t-winter">
+    <p class="here-flag">지금 이 작품 앞에 계십니다</p>
+    <div class="work">
+      <p class="wno">01 · 가 보기 전, 겨울</p>
+      <h4 id="t-winter">Matterhorn I_Winter</h4>
+      <p class="meta"><span>2024 · 캔버스에 잉크·유화 · 130×80cm (60호)</span><span>2024 · Ink and oil on canvas · 130×80cm</span><span class="award">2026 대한민국현대미술대전(KMAF) 특선</span></p>
+    </div>
+    <figure class="plate"><a class="zoom" href="img/winter-l.jpg" data-m="img/winter-m.jpg" data-group="winter" data-title="Matterhorn I_Winter" data-meta="2024 · 캔버스에 잉크·유화 · 130×80cm (60호)"><img src="img/winter-m.jpg" srcset="img/winter-s.jpg 640w, img/winter-m.jpg 1200w, img/winter-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="738" loading="lazy" decoding="async" alt="눈 덮인 마테호른 아래 불 켜진 창이 가득한 겨울 체르마트 마을. 산은 잉크로, 마을은 유화로 그렸다."></a></figure>
+    <div class="body">
+      <p>스위스에 있던 언니가 보내 준 한 장의 사진에서 시작한 그림이다. 눈을 이고 선 마테호른 아래 집들이 모여 있고, 눈 쌓인 지붕 아래 창마다 따뜻한 불빛이 새어 나온다. 집집마다 다른 이야기가 있지만, 그 위로 내려앉은 눈이 모든 이야기를 하나로 감싸 안는 듯했다.</p>
+      <p>산은 수묵처럼 잉크로, 마을은 유화로 그렸다. 동양화와 서양화라는 서로 다른 두 회화의 언어를 한 화면에 들인 이 방식이 작가가 말하는 ‘숨쉬는 경계’다.</p>
+      <p class="pin"><span class="pin-tag">Solid</span>가 보지 않고 그린 산, 머릿속 관념의 풍경</p>
+    </div>
+    <details class="en-block"><summary>English</summary><div class="inner"><p>The painting began with a single photograph sent by the artist’s sister from Switzerland: houses gathered beneath the snow-capped Matterhorn, warm light in every window under snow-laden roofs, the snow seeming to gather each household’s story into one. The mountain is painted in ink, in the manner of East Asian ink painting, and the village in oil. Two pictorial languages share one surface, which the artist calls a breathing boundary. A landscape of the idea held in the mind (Solid).</p></div></details>
+    <a class="back" href="#works">↑ 출품작 목록</a>
+  </article>
+
+  <article class="piece" id="hellvalley" aria-labelledby="t-hell">
+    <p class="here-flag">지금 이 작품 앞에 계십니다</p>
+    <div class="work">
+      <p class="wno">02 · 다른 땅에서 본 마테호른</p>
+      <h4 id="t-hell">Matterhorn II_Hell Valley<small>지옥계곡</small></h4>
+      <p class="meta"><span>2023 · 캔버스에 잉크·유화 · 65×53cm (15호)</span><span>2023 · Ink and oil on canvas · 65×53cm</span></p>
+    </div>
+    <figure class="plate"><a class="zoom" href="img/hellvalley-l.jpg" data-m="img/hellvalley-m.jpg" data-group="hellvalley" data-title="Matterhorn II_Hell Valley (지옥계곡)" data-meta="2023 · 캔버스에 잉크·유화 · 65×53cm (15호)"><img src="img/hellvalley-m.jpg" srcset="img/hellvalley-s.jpg 640w, img/hellvalley-m.jpg 1200w, img/hellvalley-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="974" loading="lazy" decoding="async" alt="붉고 흰 암벽 사이로 물길이 흐르는 협곡. 두터운 유화의 필치."></a></figure>
+    <div class="body">
+      <p>그림 속 장소는 홋카이도 노보리베쓰의 지옥계곡, 땅에서 화산 증기가 피어오르는 협곡이다. 마테호른 연작 안에 놓이면 이 협곡은 마테호른 어딘가의 계곡처럼 읽힌다.</p>
+      <p>멀리 떨어진 두 장소가 작가의 시선 안에서 경계 없이 이어지며, 장소의 이름보다 땅이 지닌 물질의 얼굴을 먼저 보게 한다.</p>
+    </div>
+    <details class="en-block"><summary>English</summary><div class="inner"><p>The place depicted is Jigokudani, the Hell Valley of Noboribetsu in Hokkaido, where volcanic steam rises from the ground. Within the Matterhorn series it reads as a ravine somewhere on the mountain. Two distant places join without a boundary in the artist’s eye, and the material face of the land comes before the name of any place.</p></div></details>
+    <a class="back" href="#works">↑ 출품작 목록</a>
+  </article>
+
+  <article class="piece" id="eagle" aria-labelledby="t-eagle">
+    <p class="here-flag">지금 이 작품 앞에 계십니다</p>
+    <div class="work">
+      <p class="wno">03 · 다시 태어나는 시간</p>
+      <h4 id="t-eagle">Matterhorn III_Eagle’s Rebirth<small>독수리 환생</small></h4>
+      <p class="meta"><span>2025 (2026년 재작업) · 캔버스에 잉크·유화 · 80×130cm (60호)</span><span>2025 (reworked 2026) · Ink and oil on canvas · 80×130cm</span></p>
+    </div>
+    <figure class="plate"><a class="zoom" href="img/eagle-l.jpg" data-m="img/eagle-m.jpg" data-group="eagle" data-title="Matterhorn III_Eagle’s Rebirth (독수리 환생)" data-meta="2025 (2026년 재작업) · 캔버스에 잉크·유화 · 80×130cm (60호)"><img src="img/eagle-m.jpg" srcset="img/eagle-s.jpg 390w, img/eagle-m.jpg 731w, img/eagle-l.jpg 1463w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="731" height="1200" loading="lazy" decoding="async" alt="눈 덮인 마테호른 위를 나는 두 마리의 독수리. 세로로 긴 화면."></a></figure>
+    <div class="body">
+      <p>독수리는 일흔 해 가까이 산다고 전해진다. 마흔 무렵 부리가 굽고 깃털이 무거워지면 홀로 높은 산에 올라 낡은 부리와 발톱, 깃털을 뽑아내고 새로 돋기를 기다린다는 이야기가 있다.</p>
+      <p>마테호른 설산 위를 나는 두 마리 독수리는 엔지니어로서의 경력을 지나 작가로 다시 태어난 작가 자신의 이야기다. 2025년에 완성한 그림을 2026년 다시 손보아 마무리했으니, 그림 또한 한 번 더 태어난 셈이다.</p>
+    </div>
+    <details class="en-block"><summary>English</summary><div class="inner"><p>Eagles are said to live for nearly seventy years. Around forty, the story goes, when its beak bends and its feathers grow heavy, an eagle withdraws alone to a high mountain, plucks out its worn beak, talons and feathers, and waits for new ones to grow. The two eagles over the snowy Matterhorn tell the artist’s own story of being reborn as an artist beyond a career in engineering. Completed in 2025 and reworked in 2026, the painting was itself born twice.</p></div></details>
+    <a class="back" href="#works">↑ 출품작 목록</a>
+  </article>
+
+  <article class="piece" id="summer" aria-labelledby="t-summer">
+    <p class="here-flag">지금 이 작품 앞에 계십니다</p>
+    <div class="work">
+      <p class="wno">04 · 직접 걸어 본 뒤, 여름 · 신작</p>
+      <h4 id="t-summer">Matterhorn IV_Summer</h4>
+      <p class="meta"><span>2026 · 캔버스에 잉크·유화 · 130×80cm (60호)</span><span>2026 · Ink and oil on canvas · 130×80cm</span></p>
+    </div>
+    <figure class="plate"><a class="zoom" href="img/summer-l.jpg" data-m="img/summer-m.jpg" data-group="summer" data-title="Matterhorn IV_Summer" data-meta="2026 · 캔버스에 잉크·유화 · 130×80cm (60호)"><img src="img/summer-m.jpg" srcset="img/summer-s.jpg 640w, img/summer-m.jpg 1200w, img/summer-l.jpg 2290w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="738" loading="lazy" decoding="async" alt="같은 자리에서 본 여름의 마테호른과 체르마트. 눈이 녹은 산은 어둡고, 마을의 창마다 불빛이 켜져 있다."></a></figure>
+    <div class="body">
+      <p>「Matterhorn I_Winter」를 그린 이듬해, 작가는 마테호른을 직접 찾았다. 그림으로만 알던 곳을 걸으니 마치 그림 속으로 들어선 듯했다. 그러나 같은 자리에서 바라본 여름의 산은 상상 속 겨울과 달랐다. 눈이 녹은 자리마다 암석과 숲, 마을의 일상이 드러나 있었다.</p>
+      <p>가 보지 않고 그린 풍경과 직접 경험한 뒤 그린 풍경. 아래에서 두 그림을 겹쳐 볼 수 있다.</p>
+    </div>
+    <figure>
+      <div class="compare" id="compare" style="--pos:50%">
+        <img src="img/summer-m.jpg" srcset="img/summer-m.jpg 1200w, img/summer-l.jpg 2290w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="738" loading="lazy" alt="">
+        <img class="top" src="img/winter-m.jpg" srcset="img/winter-m.jpg 1200w, img/winter-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="738" loading="lazy" alt="">
+        <span class="handle" aria-hidden="true"></span>
+        <span class="lab l">Winter · 관념</span>
+        <span class="lab r">Summer · 실재</span>
+      </div>
+      <div class="compare-ctl">
+        <label for="compare-range">겨울 ↔ 여름</label>
+        <input type="range" id="compare-range" min="0" max="100" value="50" aria-label="겨울 그림과 여름 그림을 겹쳐 비교하기">
+      </div>
+      <figcaption>이미지를 좌우로 밀어 두 그림을 비교해 보세요. 같은 자리에서 바라본 같은 산입니다.</figcaption>
+    </figure>
+    <p class="pin"><span class="pin-tag pin-hidden">Hidden</span>직접 걷고 그린 산, 가까이에서 발견한 실재</p>
+    <details class="en-block"><summary>English</summary><div class="inner"><p>A year after painting Matterhorn I_Winter, the artist went to the Matterhorn herself. Walking a place she had known only through her painting felt like stepping into it. Yet the summer mountain seen from the same spot was unlike the winter she had imagined: wherever the snow had melted, rock, forest and the everyday life of the village lay revealed. Painted from the same viewpoint, the two works form a pair between idea and reality.</p></div></details>
+    <a class="back" href="#works">↑ 출품작 목록</a>
+  </article>
+  <!-- Chapter: Distance -->
+  <div class="ch" id="ch-distance">
+    <p class="ch-k"><i>Distance</i>거리</p>
+    <h3 class="ch-t">하나의 봉우리, 무수한 땅</h3>
+    <p class="ch-d">멀리서는 하나의 봉우리로 보이는 산도 가까이 다가가면 무수한 장면으로 이루어져 있다. 작가는 산을 오르며 마주한 땅을 건축 엔지니어로서 익숙한 건축 재료와 예술가로서 만난 미술 재료, 그리고 디지털 영상으로 다시 구현했다. 바라보는 거리에 따라 대상이 달리 보이듯, 재료 또한 엔지니어와 예술가라는 두 정체성 사이를 오간다. 작가가 처음으로 평면 회화를 넘어 시도한 부조 작업이다.</p>
+    <a class="more" href="#field">작업의 원형 · 땅의 기록 →</a>
+  </div>
+
+  <article class="piece" id="physical" aria-labelledby="t-physical">
+    <p class="here-flag">지금 이 작품 앞에 계십니다</p>
+    <div class="work">
+      <p class="wno">05 · 부조 40점</p>
+      <h4 id="t-physical">Matterhorn Monolith_Physical 40</h4>
+      <p class="meta"><span>2026 · 캔버스에 혼합재료 (핸디코트, 모델링 페이스트, 젤스톤, 규사, 에폭시 레진, 목탄, 한지, 먹) · 27.3×22cm (3호, 가로형) 각 × 40점</span><span>2026 · Mixed media on canvas (joint compound, modeling paste, gel stone, silica sand, epoxy resin, charcoal, hanji, ink) · 27.3×22cm each (landscape), 40 pieces</span></p>
+    </div>
+    <figure class="plate"><a class="zoom" href="img/physical-l.jpg" data-m="img/physical-m.jpg" data-group="physical" data-title="Matterhorn Monolith_Physical 40" data-meta="2026 · 캔버스에 혼합재료 · 27.3×22cm × 40점"><img src="img/physical-m.jpg" srcset="img/physical-s.jpg 640w, img/physical-m.jpg 1200w, img/physical-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="939" loading="lazy" decoding="async" alt="Physical 40의 부조 캔버스들을 격자로 놓고 위에서 찍은 흑백 사진. 눈, 물길, 암석의 결이 칸마다 다르다."></a></figure>
+    <div class="body">
+      <p>케이블카로 해발 약 4,000m를 오르내리며 마주한 땅을 3호 캔버스 40점 위에 부조로 쌓아 올렸다. 만년설과 녹아내리는 눈, 드러난 암석, 다시 자라난 초원까지 고도마다 다른 땅이 여덟 가지 재료로 한 겹씩 쌓였다.</p>
+      <p>핸디코트, 규사, 에폭시 레진처럼 벽과 바닥을 짓는 건축 재료와 모델링 페이스트, 젤스톤, 목탄, 한지, 먹 같은 미술 재료가 한 화면에서 만난다.</p>
+      <p>멀리서는 하나의 상징적인 산이지만, 가까이에서는 한 점 한 점이 저마다 다른 물질과 표정을 지닌다.</p>
+    </div>
+    <div class="sub" aria-labelledby="h-relief">
+      <div class="sub-h"><b id="h-relief">가까이 본 다섯 점</b><span>Details</span></div>
+      <div class="reliefs">
+        <figure><a class="zoom" href="img/relief-1-l.jpg" data-m="img/relief-1-m.jpg" data-group="relief" data-title="Physical 40 · 부분 (1/5)" data-meta="작업실에서 촬영"><img src="img/relief-1-m.jpg" srcset="img/relief-1-s.jpg 640w, img/relief-1-m.jpg 1200w, img/relief-1-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="957" loading="lazy" decoding="async" alt="하얀 표면에 계단처럼 층진 결과 구겨진 주름이 있는 부조"></a></figure>
+        <figure><a class="zoom" href="img/relief-2-l.jpg" data-m="img/relief-2-m.jpg" data-group="relief" data-title="Physical 40 · 부분 (2/5)" data-meta="작업실에서 촬영"><img src="img/relief-2-m.jpg" srcset="img/relief-2-s.jpg 640w, img/relief-2-m.jpg 1200w, img/relief-2-l.jpg 2400w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="967" loading="lazy" decoding="async" alt="왼쪽은 어둡게 구겨진 면, 오른쪽은 비스듬히 흘러내린 하얀 결이 만나는 부조"></a></figure>
+        <figure><a class="zoom" href="img/relief-3-l.jpg" data-m="img/relief-3-m.jpg" data-group="relief" data-title="Physical 40 · 부분 (3/5)" data-meta="작업실에서 촬영"><img src="img/relief-3-m.jpg" srcset="img/relief-3-s.jpg 640w, img/relief-3-m.jpg 1200w, img/relief-3-l.jpg 2371w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="961" loading="lazy" decoding="async" alt="짙은 회색 암석 같은 면 위로 윤기 나는 표면이 덮인 부조"></a></figure>
+        <figure><a class="zoom" href="img/relief-4-l.jpg" data-m="img/relief-4-m.jpg" data-group="relief" data-title="Physical 40 · 부분 (4/5)" data-meta="작업실에서 촬영"><img src="img/relief-4-m.jpg" srcset="img/relief-4-s.jpg 640w, img/relief-4-m.jpg 1200w, img/relief-4-l.jpg 2360w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="976" loading="lazy" decoding="async" alt="회색 암석 같은 면 위로 흰 조각들이 흩어진 부조"></a></figure>
+        <figure><a class="zoom" href="img/relief-5-l.jpg" data-m="img/relief-5-m.jpg" data-group="relief" data-title="Physical 40 · 부분 (5/5)" data-meta="작업실에서 촬영"><img src="img/relief-5-m.jpg" srcset="img/relief-5-s.jpg 640w, img/relief-5-m.jpg 1200w, img/relief-5-l.jpg 2258w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="942" loading="lazy" decoding="async" alt="푸른 회색의 결이 비스듬히 흐르고 사이사이 어두운 덩어리가 솟은 부조"></a></figure>
+      </div>
+      <p class="cap">작업실에서 촬영한 부분. 구겨진 주름, 흘러내린 결, 윤기 있는 표면, 거친 입자가 점마다 다르다.</p>
+    </div>
+    <details class="en-block"><summary>English</summary><div class="inner"><p>Forty small relief canvases rebuild the ground met on the cable-car journey to about 4,000 meters and back: eternal snow, melting snow, bare rock, meadows growing again. Eight materials are layered one over another. Construction materials that build walls and floors, joint compound, silica sand and epoxy resin, meet the art materials of modeling paste, gel stone, charcoal, hanji and ink on a single surface. From afar, one symbolic mountain; up close, each piece holds its own matter and expression.</p></div></details>
+    <a class="back" href="#works">↑ 출품작 목록</a>
+  </article>
+
+  <article class="piece" id="digital" aria-labelledby="t-digital">
+    <p class="here-flag">지금 이 작품 앞에 계십니다</p>
+    <div class="work">
+      <p class="wno">06 · 부조 프레임과 디지털 영상</p>
+      <h4 id="t-digital">Matterhorn Monolith_Digital 01</h4>
+      <p class="meta"><span>2026 · 혼합재료 부조 프레임, 11인치 태블릿, 단채널 디지털 영상 (흑백, 사운드, 4분 19초, 반복 재생) · 30×22cm (프레임 포함)</span><span>2026 · Mixed-media relief frame, 11-inch tablet, single-channel digital video (black and white, sound, 4 min 19 sec, loop) · 30×22cm (including frame)</span></p>
+    </div>
+    <figure class="video">
+      <video id="dvid" controls playsinline preload="none" poster="img/digital-poster.jpg" width="1280" height="720" aria-label="Matterhorn Monolith_Digital 01 영상">
+        <source src="media/digital01.mp4" type="video/mp4">
+      </video>
+      <figcaption>영상 전체 (4분 19초, 사운드). 웹용으로 압축한 파일이며, 원본 화질은 전시장에서 감상할 수 있습니다.</figcaption>
+    </figure>
+    <div class="body">
+      <p>「Physical 40」이 멈춰 있는 땅이라면, 「Digital 01」은 변해 가는 땅이다. 작가가 고도마다 촬영한 사진으로 만든 흑백 영상 속에서 빙하와 크레바스, 눈이 녹아 드러난 암석과 물길이 천천히 겹치며 서로의 모습이 된다.</p>
+      <p>영상은 「Physical 40」과 같은 재료로 빚은 부조 프레임 안에서 흐른다. 디지털 또한 하나의 재료가 되어, 단단한 물질의 틀 안에서도 땅은 멈추지 않고 숨을 쉰다.</p>
+    </div>
+    <div class="grid2" role="group" aria-label="Digital 01 영상의 네 장면">
+      <figure><a class="zoom" href="img/digital-1-l.jpg" data-m="img/digital-1-m.jpg" data-group="scenes" data-title="Digital 01 · 빙하" data-meta="영상 속 장면 (1/4)"><img src="img/digital-1-m.jpg" srcset="img/digital-1-s.jpg 640w, img/digital-1-m.jpg 1200w, img/digital-1-l.jpg 2400w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="부조 프레임 안 화면에 갈라진 빙하가 보인다."></a><figcaption>빙하</figcaption></figure>
+      <figure><a class="zoom" href="img/digital-2-l.jpg" data-m="img/digital-2-m.jpg" data-group="scenes" data-title="Digital 01 · 녹아내리는 눈" data-meta="영상 속 장면 (2/4)"><img src="img/digital-2-m.jpg" srcset="img/digital-2-s.jpg 640w, img/digital-2-m.jpg 1200w, img/digital-2-l.jpg 2400w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="부조 프레임 안 화면에 녹다 남은 눈 조각과 물줄기가 보인다."></a><figcaption>녹아내리는 눈</figcaption></figure>
+      <figure><a class="zoom" href="img/digital-3-l.jpg" data-m="img/digital-3-m.jpg" data-group="scenes" data-title="Digital 01 · 호수와 암석" data-meta="영상 속 장면 (3/4)"><img src="img/digital-3-m.jpg" srcset="img/digital-3-s.jpg 640w, img/digital-3-m.jpg 1200w, img/digital-3-l.jpg 2400w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="부조 프레임 안 화면에 돌무더기 비탈과 잔잔한 호수가 보인다."></a><figcaption>호수와 암석</figcaption></figure>
+      <figure><a class="zoom" href="img/digital-4-l.jpg" data-m="img/digital-4-m.jpg" data-group="scenes" data-title="Digital 01 · 초원과 물길" data-meta="영상 속 장면 (4/4)"><img src="img/digital-4-m.jpg" srcset="img/digital-4-s.jpg 640w, img/digital-4-m.jpg 1200w, img/digital-4-l.jpg 2400w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="부조 프레임 안 화면에 초원과 오두막, 가느다란 물길이 보인다."></a><figcaption>초원과 물길</figcaption></figure>
+    </div>
+    <p class="cap">영상 속 네 장면.</p>
+    <details class="en-block"><summary>English</summary><div class="inner"><p>If Physical 40 holds the land still, Digital 01 shows it changing. In a black-and-white video made from photographs the artist took at each altitude, glaciers and crevasses, rock laid bare by melting snow, and meltwater slowly overlap and become one another. The video plays inside a relief frame made of the same materials as Physical 40. Digital becomes one more material, and even within a frame of solid matter the land keeps breathing.</p></div></details>
+    <a class="back" href="#works">↑ 출품작 목록</a>
+  </article>
+
+  <article class="piece" id="studies" aria-labelledby="t-studies">
+    <p class="here-flag">지금 이 작품 앞에 계십니다</p>
+    <div class="work">
+      <p class="wno">07 · 목탄 습작 4점</p>
+      <h4 id="t-studies">Matterhorn Monolith_Studies</h4>
+      <p class="meta"><span>2026 · 캔버스 천에 목탄, 액자 · 각 27.3×22cm (3호) × 4점</span><span class="sz">액자 포함 39.3×36cm (2점) · 39.3×39.3cm (2점)</span><span>2026 · Charcoal on canvas cloth, framed · 27.3×22cm each, 4 pieces · framed 39.3×36cm (2) and 39.3×39.3cm (2)</span></p>
+    </div>
+    <div class="grid2" role="group" aria-label="목탄 습작 네 점">
+      <figure><a class="zoom" href="img/study-1-l.jpg" data-m="img/study-1-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (1/4) · 만년설의 봉우리" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study-1-m.jpg" srcset="img/study-1-s.jpg 640w, img/study-1-m.jpg 1200w, img/study-1-l.jpg 1448w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="습작 1. 눈 덮인 봉우리와 그 아래 어두운 능선"></a><figcaption>01 · 만년설의 봉우리</figcaption></figure>
+      <figure><a class="zoom" href="img/study-2-l.jpg" data-m="img/study-2-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (2/4) · 눈이 녹은 비탈" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study-2-m.jpg" srcset="img/study-2-s.jpg 640w, img/study-2-m.jpg 1200w, img/study-2-l.jpg 1448w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="습작 2. 어둡게 칠한 비탈 위로 녹아 흘러내린 눈의 자국"></a><figcaption>02 · 눈이 녹은 비탈</figcaption></figure>
+      <figure><a class="zoom" href="img/study-3-l.jpg" data-m="img/study-3-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (3/4) · 갈라져 흐르는 물길" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study-3-m.jpg" srcset="img/study-3-s.jpg 640w, img/study-3-m.jpg 1200w, img/study-3-l.jpg 1448w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="습작 3. 여러 갈래로 갈라지는 밝은 물길"></a><figcaption>03 · 갈라져 흐르는 물길</figcaption></figure>
+      <figure><a class="zoom" href="img/study-4-l.jpg" data-m="img/study-4-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (4/4) · 깊은 계곡" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study-4-m.jpg" srcset="img/study-4-s.jpg 640w, img/study-4-m.jpg 1200w, img/study-4-l.jpg 1448w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="습작 4. 숲으로 덮인 비탈 사이의 깊은 계곡"></a><figcaption>04 · 깊은 계곡</figcaption></figure>
+    </div>
+    <div class="body">
+      <p>여러 물질을 두껍게 쌓은 「Physical 40」과 달리, 「Studies」는 캔버스 천 위에 목탄만으로 명암을 남긴 네 점의 습작이다. 만년설의 봉우리, 눈이 녹은 비탈, 갈라져 흐르는 물길, 깊은 계곡. 가장 단순한 재료로 그렸음에도 땅의 다양한 표정은 고스란히 드러난다.</p>
+      <p>같은 땅이라도 어떤 재료로 그리느냐에 따라 전혀 다른 얼굴을 갖는다.</p>
+    </div>
+    <details class="en-block"><summary>English</summary><div class="inner"><p>Unlike the thickly layered Physical 40, Studies are four drawings in charcoal alone on canvas cloth, leaving only light and shade: a snow-capped peak, a slope where the snow has melted, branching meltwater, a deep valley. Drawn with the simplest of materials, they still carry the land’s many expressions. The same ground takes on an entirely different face depending on the material it is drawn with.</p></div></details>
+    <a class="back" href="#works">↑ 출품작 목록</a>
+  </article>
+
+  <!-- Chapter: City in Bag -->
+  <div class="ch" id="ch-bag">
+    <p class="ch-k"><i>City in Bag</i>봉투 속 도시</p>
+    <h3 class="ch-t">관념과 실재</h3>
+    <p class="ch-d">작가의 대표 연작이다. 봉투 속 풍경은 그 도시를 찾기 전의 관념을, 봉투를 쥔 손은 직접 마주한 이면을 그린다. 「봉투 속 체르마트」는 이 연작의 신작으로, 가장 순수하다고 믿는 풍경의 이면을 담았다.</p>
+  </div>
+
+  <article class="piece" id="zermatt" aria-labelledby="t-zermatt">
+    <p class="here-flag">지금 이 작품 앞에 계십니다</p>
+    <div class="work">
+      <p class="wno">08 · 「봉투 속 도시」 연작 · 신작</p>
+      <h4 id="t-zermatt">봉투 속 체르마트<small>Zermatt in Bag</small></h4>
+      <p class="meta"><span>2026 · 장지에 먹·수채 · 50×65cm (15호)</span><span>2026 · Ink and watercolor on jangji · 50×65cm</span></p>
+    </div>
+    <figure class="plate"><a class="zoom" href="img/zermatt-l.jpg" data-m="img/zermatt-m.jpg" data-group="zermatt" data-title="봉투 속 체르마트 Zermatt in Bag" data-meta="2026 · 장지에 먹·수채 · 50×65cm (15호)"><img src="img/zermatt-m.jpg" srcset="img/zermatt-s.jpg 490w, img/zermatt-m.jpg 919w, img/zermatt-l.jpg 1837w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="919" height="1200" loading="lazy" decoding="async" alt="금융인의 손이 쥔 찢어진 종이봉투 틈으로 마테호른과 체르마트 마을이 보인다. 손목에는 시계와 커프스, 손가락에는 반지."></a></figure>
+    <div class="body">
+      <p>마테호른과 체르마트 하면 흔히 천혜의 자연, 가장 순수한 풍경을 떠올린다. 그러나 그 이면에는 ‘세계의 금고’라 불려 온 스위스 은행과, 검은 돈이 머무는 비밀 계좌의 역사가 있다.</p>
+      <p>작가는 돈뭉치를 옮길 때 쓰이는 종이봉투를 그렸다. 찢어진 틈 사이로 마테호른과 체르마트의 풍경이 펼쳐지고, 그 봉투를 화려한 금융인의 손이 쥐고 있다.</p>
+      <p class="pin"><span class="pin-tag">Solid</span>봉투 속 풍경, 우리가 품은 관념</p>
+      <p class="pin"><span class="pin-tag pin-hidden">Hidden</span>봉투를 쥔 손, 가까이에서 드러나는 실재</p>
+    </div>
+    <details class="en-block"><summary>English</summary><div class="inner"><p>The Matterhorn and Zermatt are usually imagined as unspoiled nature, the purest of landscapes. Behind them, however, lies the history of Swiss banking, long called the world’s vault, and of secret accounts that shelter dark money. The artist paints a paper envelope of the kind used to carry bundles of cash. Through its tear the Matterhorn and Zermatt come into view, and the envelope is held in the adorned hand of a financier. The landscape in the bag is the idea we hold (Solid); the hand is the reality revealed up close (Hidden).</p></div></details>
+    <a class="back" href="#works">↑ 출품작 목록</a>
+  </article>
+</section>
+
+<section class="section wrap" id="field" aria-labelledby="h-field">
+  <div class="sh"><span class="sh-no">06</span><h2 class="sh-t" id="h-field">땅의 기록</h2><span class="sh-en">Field Record</span></div>
+  <div class="body">
+    <p>모든 작업은 이 사진들에서 시작되었다. 2025년 8월, 작가는 케이블카로 해발 약 4,000m의 전망대를 오르내리며 고도에 따라 달라지는 땅을 사진으로 기록했다. 「Physical 40」의 부조와 「Digital 01」의 영상은 이 기록을 원형으로 한다.</p>
+  </div>
+  <details class="en-block"><summary>English</summary><div class="inner"><p>All of the work began with these photographs. In August 2025, travelling by cable car to an observation deck at about 4,000 meters and back, the artist photographed the land as it changed with altitude. The reliefs of Physical 40 and the video of Digital 01 take this record as their origin.</p></div></details>
+  <ul class="tiles" aria-label="땅의 기록 사진 29장, 높은 곳부터">
+    <li><a class="zoom" href="img/field-01-l.jpg" data-m="img/field-01-m.jpg" data-group="field" data-title="해발 3,887m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-01-s.jpg" srcset="img/field-01-s.jpg 640w, img/field-01-m.jpg 1200w" sizes="(min-width: 760px) 180px, calc(50vw - 20px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 3,887m. 눈 덮인 능선 사이로 드러난 검은 바위"></a></li>
+    <li><a class="zoom" href="img/field-02-l.jpg" data-m="img/field-02-m.jpg" data-group="field" data-title="해발 3,823m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-02-s.jpg" srcset="img/field-02-s.jpg 640w, img/field-02-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 3,823m. 작은 점들이 박힌 매끈한 얼음 면"></a></li>
+    <li><a class="zoom" href="img/field-03-l.jpg" data-m="img/field-03-m.jpg" data-group="field" data-title="해발 3,812m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-03-s.jpg" srcset="img/field-03-s.jpg 640w, img/field-03-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="495" loading="lazy" decoding="async" alt="해발 3,812m. 가까이서 본 얼음의 주름과 틈"></a></li>
+    <li><a class="zoom" href="img/field-04-l.jpg" data-m="img/field-04-m.jpg" data-group="field" data-title="해발 3,367m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-04-s.jpg" srcset="img/field-04-s.jpg 640w, img/field-04-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 3,367m. 그림자가 드리운 빙하 비탈의 줄무늬"></a></li>
+    <li><a class="zoom" href="img/field-05-l.jpg" data-m="img/field-05-m.jpg" data-group="field" data-title="해발 3,350m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-05-s.jpg" srcset="img/field-05-s.jpg 640w, img/field-05-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 3,350m. 바위 비탈에 길게 남은 눈"></a></li>
+    <li><a class="zoom" href="img/field-06-l.jpg" data-m="img/field-06-m.jpg" data-group="field" data-title="해발 3,350m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-06-s.jpg" srcset="img/field-06-s.jpg 640w, img/field-06-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 3,350m. 바위 협곡 사이로 쏟아져 내린 빙하의 얼음 덩어리"></a></li>
+    <li><a class="zoom" href="img/field-07-l.jpg" data-m="img/field-07-m.jpg" data-group="field" data-title="해발 3,332m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-07-s.jpg" srcset="img/field-07-s.jpg 640w, img/field-07-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 3,332m. 빙하의 결 사이로 솟은 바위"></a></li>
+    <li><a class="zoom" href="img/field-08-l.jpg" data-m="img/field-08-m.jpg" data-group="field" data-title="해발 3,213m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-08-s.jpg" srcset="img/field-08-s.jpg 640w, img/field-08-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 3,213m. 휘어진 줄무늬를 이룬 빙하 표면"></a></li>
+    <li><a class="zoom" href="img/field-09-l.jpg" data-m="img/field-09-m.jpg" data-group="field" data-title="해발 3,196m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-09-s.jpg" srcset="img/field-09-s.jpg 640w, img/field-09-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 3,196m. 빙하 가장자리에 남은 눈"></a></li>
+    <li><a class="zoom" href="img/field-10-l.jpg" data-m="img/field-10-m.jpg" data-group="field" data-title="해발 3,196m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-10-s.jpg" srcset="img/field-10-s.jpg 640w, img/field-10-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 3,196m. 설산 아래 펼쳐진 빙하"></a></li>
+    <li><a class="zoom" href="img/field-11-l.jpg" data-m="img/field-11-m.jpg" data-group="field" data-title="해발 3,169m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-11-s.jpg" srcset="img/field-11-s.jpg 640w, img/field-11-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 3,169m. 잘게 갈라진 빙하의 틈"></a></li>
+    <li><a class="zoom" href="img/field-12-l.jpg" data-m="img/field-12-m.jpg" data-group="field" data-title="해발 2,951m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-12-s.jpg" srcset="img/field-12-s.jpg 640w, img/field-12-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,951m. 바위 사이에 물이 고인 얼음 구멍"></a></li>
+    <li><a class="zoom" href="img/field-13-l.jpg" data-m="img/field-13-m.jpg" data-group="field" data-title="해발 2,905m" data-meta="땅의 기록 · 2025. 8. 9 · 사진 이인실"><img src="img/field-13-s.jpg" srcset="img/field-13-s.jpg 640w, img/field-13-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,905m. 돌무더기 비탈 아래 잔잔한 호수"></a></li>
+    <li><a class="zoom" href="img/field-14-l.jpg" data-m="img/field-14-m.jpg" data-group="field" data-title="해발 2,765m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-14-s.jpg" srcset="img/field-14-s.jpg 640w, img/field-14-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,765m. 바위 위로 흘러내리는 녹은 물"></a></li>
+    <li><a class="zoom" href="img/field-15-l.jpg" data-m="img/field-15-m.jpg" data-group="field" data-title="해발 2,584m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-15-s.jpg" srcset="img/field-15-s.jpg 640w, img/field-15-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,584m. 숲이 내려다보이는 풀 비탈"></a></li>
+    <li><a class="zoom" href="img/field-16-l.jpg" data-m="img/field-16-m.jpg" data-group="field" data-title="해발 2,582m" data-meta="땅의 기록 · 2025. 8. 9 · 사진 이인실"><img src="img/field-16-s.jpg" srcset="img/field-16-s.jpg 640w, img/field-16-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,582m. 초원 사이로 난 물길과 오두막"></a></li>
+    <li><a class="zoom" href="img/field-17-l.jpg" data-m="img/field-17-m.jpg" data-group="field" data-title="해발 2,579m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-17-s.jpg" srcset="img/field-17-s.jpg 640w, img/field-17-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,579m. 바위투성이 비탈과 이정표"></a></li>
+    <li><a class="zoom" href="img/field-18-l.jpg" data-m="img/field-18-m.jpg" data-group="field" data-title="해발 2,576m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-18-s.jpg" srcset="img/field-18-s.jpg 640w, img/field-18-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,576m. 숲으로 덮인 비탈을 가로지르는 길"></a></li>
+    <li><a class="zoom" href="img/field-19-l.jpg" data-m="img/field-19-m.jpg" data-group="field" data-title="해발 2,566m" data-meta="땅의 기록 · 2025. 8. 9 · 사진 이인실"><img src="img/field-19-s.jpg" srcset="img/field-19-s.jpg 640w, img/field-19-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,566m. 깊게 패인 골짜기가 이어지는 암벽"></a></li>
+    <li><a class="zoom" href="img/field-20-l.jpg" data-m="img/field-20-m.jpg" data-group="field" data-title="해발 2,543m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-20-s.jpg" srcset="img/field-20-s.jpg 640w, img/field-20-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="498" loading="lazy" decoding="async" alt="해발 2,543m. 바위 비탈을 가로지르는 길"></a></li>
+    <li><a class="zoom" href="img/field-21-l.jpg" data-m="img/field-21-m.jpg" data-group="field" data-title="해발 2,499m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-21-s.jpg" srcset="img/field-21-s.jpg 640w, img/field-21-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,499m. 거친 바위 표면"></a></li>
+    <li><a class="zoom" href="img/field-22-l.jpg" data-m="img/field-22-m.jpg" data-group="field" data-title="해발 2,487m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-22-s.jpg" srcset="img/field-22-s.jpg 640w, img/field-22-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,487m. 얇게 쪼개진 돌 조각들"></a></li>
+    <li><a class="zoom" href="img/field-23-l.jpg" data-m="img/field-23-m.jpg" data-group="field" data-title="해발 2,429m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-23-s.jpg" srcset="img/field-23-s.jpg 640w, img/field-23-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,429m. 숲 사이 골짜기를 흐르는 물길"></a></li>
+    <li><a class="zoom" href="img/field-24-l.jpg" data-m="img/field-24-m.jpg" data-group="field" data-title="해발 2,384m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-24-s.jpg" srcset="img/field-24-s.jpg 640w, img/field-24-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,384m. 바위와 풀이 섞인 비탈"></a></li>
+    <li><a class="zoom" href="img/field-25-l.jpg" data-m="img/field-25-m.jpg" data-group="field" data-title="해발 2,328m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-25-s.jpg" srcset="img/field-25-s.jpg 640w, img/field-25-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,328m. 숲 아래 호수와 물가"></a></li>
+    <li><a class="zoom" href="img/field-26-l.jpg" data-m="img/field-26-m.jpg" data-group="field" data-title="해발 2,227m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-26-s.jpg" srcset="img/field-26-s.jpg 640w, img/field-26-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,227m. 나무가 드문드문 선 비탈"></a></li>
+    <li><a class="zoom" href="img/field-27-l.jpg" data-m="img/field-27-m.jpg" data-group="field" data-title="해발 2,054m" data-meta="땅의 기록 · 2025. 8. 9 · 사진 이인실"><img src="img/field-27-s.jpg" srcset="img/field-27-s.jpg 640w, img/field-27-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,054m. 바위 사이로 쏟아지는 폭포"></a></li>
+    <li><a class="zoom" href="img/field-28-l.jpg" data-m="img/field-28-m.jpg" data-group="field" data-title="해발 2,037m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-28-s.jpg" srcset="img/field-28-s.jpg 640w, img/field-28-m.jpg 1181w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 2,037m. 길이 굽이도는 협곡과 폭포"></a></li>
+    <li><a class="zoom" href="img/field-29-l.jpg" data-m="img/field-29-m.jpg" data-group="field" data-title="해발 1,736m" data-meta="땅의 기록 · 2025. 8. 8 · 사진 이인실"><img src="img/field-29-s.jpg" srcset="img/field-29-s.jpg 640w, img/field-29-m.jpg 1200w" sizes="(min-width: 760px) 90px, calc(25vw - 10px)" width="640" height="480" loading="lazy" decoding="async" alt="해발 1,736m. 숲과 암벽"></a></li>
+  </ul>
+  <p class="field-note">높은 곳에서 낮은 곳 순으로 놓았습니다. 사진을 누르면 촬영 고도와 함께 크게 볼 수 있습니다. 사진 이인실.</p>
+</section>
+
+<section class="section wrap" id="installation" aria-labelledby="h-install">
+  <div class="sh"><span class="sh-no">07</span><h2 class="sh-t" id="h-install">전시 전경</h2><span class="sh-en">Installation View</span></div>
+  <div class="install">
+    <figure class="wide"><div class="ph"><b>Installation view</b><span>CICA 미술관 Gallery 3A · 11월 10일 설치 후 공개</span></div></figure>
+    <figure><div class="ph"><b>Installation view</b><span>설치 후 공개</span></div></figure>
+    <figure><div class="ph"><b>Installation view</b><span>설치 후 공개</span></div></figure>
+  </div>
+  <p class="cap" style="margin-top:.8rem">전시 전경 사진은 11월 10일 설치를 마친 뒤 공개됩니다.</p>
+</section>
+
+<section class="section wrap voice" id="voice" aria-labelledby="h-voice">
+  <div class="sh"><span class="sh-no">—</span><h2 class="sh-t" id="h-voice">관객에게</h2><span class="sh-en">To You</span></div>
+  <p class="q">멀리서 하나로 알던 것이, 가까이 다가가 보니 전혀 달랐던 적이 있나요?</p>
+  <p>장소일 수도, 사람일 수도, 혹은 나 자신일 수도 있습니다. 그 이야기를 작가에게 들려주세요.</p>
+  <p><a href="https://www.instagram.com/sillystudio2025/" target="_blank" rel="noopener">인스타그램 @sillystudio2025</a></p>
+</section>
+</main>
+
+<div class="band-img" aria-hidden="true"><img src="img/band-m.jpg" srcset="img/band-s.jpg 640w, img/band-m.jpg 1200w, img/band-l.jpg 2400w" sizes="100vw" width="1200" height="366" loading="lazy" alt=""></div>
+<footer class="wrap">
+  <div class="foot-row">
+    <p><b>Breathing Matter 숨쉬는 물질</b> · 이인실 개인전<br><span>2026. 11. 11 – 11. 15 · CICA 미술관 Gallery 3A, 김포</span></p>
+    <p><span>Instagram</span> @sillystudio2025</p>
+  </div>
+  <p class="copy">© 2026 이인실 Insil Lee · Sillystudio. 작품 이미지와 사진의 무단 사용을 금합니다.</p>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="작품 크게 보기" hidden>
+  <div class="lb-top">
+    <span class="lb-count" id="lb-count"></span>
+    <button type="button" class="lb-btn" id="lb-close">닫기 ✕</button>
+  </div>
+  <div class="lb-stage" id="lb-stage">
+    <img id="lb-img" alt="">
+    <button type="button" class="lb-nav prev" id="lb-prev" aria-label="이전 이미지">‹</button>
+    <button type="button" class="lb-nav next" id="lb-next" aria-label="다음 이미지">›</button>
+    <span class="lb-load" id="lb-load" hidden>고화질 불러오는 중</span>
+  </div>
+  <div class="lb-cap">
+    <p class="t" id="lb-title"></p>
+    <p class="m" id="lb-meta"></p>
+    <a href="#" id="lb-sheet" hidden>이 작품 소개 보기 →</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ---------- arriving from a caption QR: mark that sheet ---------- */
+  function markHere(){
+    var id = (location.hash || '').slice(1);
+    if(!/^[\w-]+$/.test(id)) return;
+    var el = document.getElementById(id);
+    if(!el) return;
+    var sheet = el.closest('.piece');
+    if(sheet) sheet.classList.add('is-here');
+    requestAnimationFrame(function(){ el.scrollIntoView({block:'start'}); });
+  }
+  markHere();
+  window.addEventListener('hashchange', function(){
+    document.querySelectorAll('.piece.is-here').forEach(function(s){ s.classList.remove('is-here'); });
+  });
+
+  /* ---------- Winter / Summer compare ---------- */
+  var cmp = document.getElementById('compare');
+  var range = document.getElementById('compare-range');
+  function setPos(p){
+    p = Math.max(0, Math.min(100, p));
+    cmp.style.setProperty('--pos', p + '%');
+    range.value = Math.round(p);
+  }
+  range.addEventListener('input', function(){ setPos(+range.value); });
+  var dragging = false;
+  function fromEvent(e){ var r = cmp.getBoundingClientRect(); setPos((e.clientX - r.left) / r.width * 100); }
+  cmp.addEventListener('pointerdown', function(e){ dragging = true; fromEvent(e); try{ cmp.setPointerCapture(e.pointerId); }catch(_){} });
+  cmp.addEventListener('pointermove', function(e){ if(dragging) fromEvent(e); });
+  ['pointerup','pointercancel','lostpointercapture'].forEach(function(t){ cmp.addEventListener(t, function(){ dragging = false; }); });
+
+
+  /* ---------- artwork viewer ---------- */
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img');
+  var lbTitle = document.getElementById('lb-title'), lbMeta = document.getElementById('lb-meta');
+  var lbCount = document.getElementById('lb-count'), lbSheet = document.getElementById('lb-sheet');
+  var lbLoad = document.getElementById('lb-load'), lbClose = document.getElementById('lb-close');
+  var lbPrev = document.getElementById('lb-prev'), lbNext = document.getElementById('lb-next');
+  var links = Array.prototype.slice.call(document.querySelectorAll('a.zoom'));
+  var list = [], idx = 0, opener = null, token = 0;
+
+  function show(i){
+    idx = (i + list.length) % list.length;
+    var a = list[idx], my = ++token;
+    lbImg.src = a.getAttribute('data-m');
+    lbImg.alt = (a.querySelector('img') || {}).alt || '';
+    lbTitle.textContent = a.getAttribute('data-title') || '';
+    lbMeta.textContent = a.getAttribute('data-meta') || '';
+    lbCount.textContent = list.length > 1 ? (idx + 1) + ' / ' + list.length : '';
+    var multi = list.length > 1;
+    lbPrev.hidden = !multi; lbNext.hidden = !multi;
+    var sheet = a.getAttribute('data-sheet');
+    lbSheet.hidden = !sheet;
+    if(sheet) lbSheet.setAttribute('href', sheet);
+    lbLoad.hidden = false;
+    var hi = new Image();
+    hi.onload = function(){ if(my === token){ lbImg.src = hi.src; lbLoad.hidden = true; } };
+    hi.onerror = function(){ if(my === token) lbLoad.hidden = true; };
+    hi.src = a.getAttribute('href');
+    // warm the next one
+    if(multi){ var n = new Image(); n.src = list[(idx + 1) % list.length].getAttribute('data-m'); }
+  }
+  function open(a){
+    var g = a.getAttribute('data-group');
+    list = links.filter(function(x){ return x.getAttribute('data-group') === g; });
+    opener = a;
+    lb.hidden = false;
+    document.documentElement.style.overflow = 'hidden';
+    show(list.indexOf(a));
+    lbClose.focus();
+  }
+  function close(){
+    lb.hidden = true;
+    document.documentElement.style.overflow = '';
+    token++;
+    if(opener) opener.focus({preventScroll:true});
+  }
+  links.forEach(function(a){
+    a.addEventListener('click', function(e){
+      if(e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault(); open(a);
+    });
+  });
+  lbClose.addEventListener('click', close);
+  lbPrev.addEventListener('click', function(){ show(idx - 1); });
+  lbNext.addEventListener('click', function(){ show(idx + 1); });
+  lbSheet.addEventListener('click', function(e){
+    e.preventDefault();
+    var target = document.querySelector(lbSheet.getAttribute('href'));
+    opener = null; close();
+    if(target) target.scrollIntoView({block:'start'});
+  });
+  document.addEventListener('keydown', function(e){
+    if(lb.hidden) return;
+    if(e.key === 'Escape'){ close(); }
+    else if(e.key === 'ArrowLeft' && list.length > 1){ show(idx - 1); }
+    else if(e.key === 'ArrowRight' && list.length > 1){ show(idx + 1); }
+    else if(e.key === 'Tab'){
+      var f = Array.prototype.slice.call(lb.querySelectorAll('button:not([hidden]), a:not([hidden])'));
+      if(!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+      else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+    }
+  });
+  // swipe with one finger; leave pinch-zoom alone
+  var sx = null, sy = null, multiTouch = false;
+  var st = document.getElementById('lb-stage');
+  st.addEventListener('touchstart', function(e){
+    multiTouch = e.touches.length > 1;
+    if(!multiTouch){ sx = e.touches[0].clientX; sy = e.touches[0].clientY; }
+  }, {passive:true});
+  st.addEventListener('touchmove', function(e){ if(e.touches.length > 1) multiTouch = true; }, {passive:true});
+  st.addEventListener('touchend', function(e){
+    if(multiTouch || sx === null || list.length < 2) { sx = null; return; }
+    if(window.visualViewport && window.visualViewport.scale > 1.05){ sx = null; return; }
+    var t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
+    if(Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5){ show(dx < 0 ? idx + 1 : idx - 1); }
+    sx = null;
+  });
+})();
+</script>
+
+</body>
+</html>
