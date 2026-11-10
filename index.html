@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Breathing Matter 전시안내</title>
-<meta name="description" content="이인실 개인전 《Breathing Matter (숨쉬는 물질)》 · CICA 미술관 Gallery 3A · 2026. 11. 11 – 11. 15. 출품작을 고화질로 감상하고 작품 소개와 작가가 기록한 마테호른의 땅을 볼 수 있는 전시안내 페이지.">
+<meta name="description" content="이인실 개인전 《Breathing Matter (숨쉬는 물질)》 · CICA 미술관 Gallery 3A · 2026. 11. 11 – 11. 15. 출품작을 고화질로 감상하고 작품 소개, 작가가 기록한 마테호른의 땅, 전시 전경과 설치 기록을 볼 수 있는 전시안내 페이지.">
 <meta property="og:title" content="Breathing Matter (숨쉬는 물질) · 이인실 개인전">
 <meta property="og:description" content="멀리서는 하나의 봉우리, 가까이 오르니 무수한 땅의 얼굴.">
 <meta property="og:type" content="website">
@@ -225,14 +225,38 @@ figcaption,.cap{font-size:.82rem; line-height:1.6; color:var(--gray)}
 .tiles .zoom:hover img{opacity:.85}
 .field-note{margin-top:1rem; font-size:.76rem; color:var(--gray); line-height:1.6}
 
-/* ---------- installation views (filled after 11. 10) ---------- */
+/* ---------- installation views ---------- */
 .install{display:grid; grid-template-columns:1fr 1fr; gap:8px}
 .install > *{min-width:0}
 .install .wide{grid-column:1 / -1}
-.ph{aspect-ratio:3/2; max-width:100%; background:var(--plate); border:1px dashed var(--rule); display:grid; place-content:center; gap:.2rem; text-align:center; padding:1rem}
-.install .wide .ph{aspect-ratio:16/9}
-.ph b{font-family:var(--italic); font-style:italic; font-weight:400; font-size:1.05rem; color:var(--gray)}
-.ph span{font-size:.74rem; color:var(--gray); letter-spacing:.04em}
+
+/* instagram on the cover */
+.ig{display:flex; align-items:baseline; flex-wrap:wrap; gap:.15rem .6rem; line-height:1.45}
+.ig span{font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gray); font-weight:500}
+.ig a{font-size:1rem; font-weight:500; color:var(--ink); text-decoration:underline; text-underline-offset:4px}
+.ig a:hover{color:var(--gray)}
+
+/* artist portrait */
+.artist{display:grid; gap:1.6rem}
+.portrait{max-width:22rem}
+.portrait img{width:100%; aspect-ratio:4/5; object-fit:cover; background:var(--plate)}
+
+/* Physical 40, laid out as hung: 8 across, 5 rows */
+.p40{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(8, minmax(0,1fr)); gap:3px}
+.p40 li{min-width:0}
+.p40 .zoom{display:block; aspect-ratio:320/260; overflow:hidden; background:var(--plate)}
+.p40 .zoom img{width:100%; height:100%; object-fit:cover; transition:opacity .2s}
+.p40 .zoom:hover img{opacity:.85}
+.p40 .zoom::after{content:none}
+
+/* installation and behind-the-scenes photographs */
+.install figure .zoom{display:block; background:var(--plate)}
+.install figure .zoom img{width:100%}
+.install figcaption{font-size:.78rem; line-height:1.55}
+.install .zoom::after{content:none}
+.sub-d{font-size:.92rem; line-height:1.75; max-width:41rem}
+.sub.first{border-top:0; padding-top:0}
+.sub + .sub{margin-top:2.4rem}
 
 .voice{display:grid; gap:1.1rem}
 .voice .q{font-family:var(--serif); font-weight:400; color:var(--ink); font-size:clamp(1.45rem, 6vw, 2.05rem); line-height:1.45}
@@ -273,8 +297,12 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
   .exps{grid-template-columns:1fr 1fr; column-gap:24px}
   .piece{padding-block:3.2rem 3.4rem; gap:1.7rem}
   .tiles{grid-template-columns:repeat(8, minmax(0,1fr)); gap:5px}
+  .artist{grid-template-columns:15rem minmax(0,1fr); gap:2.2rem; align-items:start}
+  .portrait{max-width:none}
+  .p40{gap:5px}
+  .install{gap:12px}
 }
-@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} .tiles .zoom img{transition:none} }
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} .tiles .zoom img, .p40 .zoom img{transition:none} }
 </style>
 </head>
 <body>
@@ -290,7 +318,8 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
       <p><b>이인실 개인전</b><span>Insil Lee Solo Exhibition</span></p>
       <p class="r"><b>2026. 11. 11 – 11. 15</b><span>CICA 미술관 Gallery 3A, 김포</span></p>
     </div>
-    <nav class="jump" aria-label="바로가기"><a href="#works">출품작 한눈에 보기</a><a href="#detail">작품 소개</a><a href="#field">땅의 기록</a></nav>
+    <p class="ig"><span>Instagram</span><a href="https://www.instagram.com/sillystudio2025/" target="_blank" rel="noopener">@sillystudio2025</a></p>
+    <nav class="jump" aria-label="바로가기"><a href="#works">출품작 한눈에 보기</a><a href="#detail">작품 소개</a><a href="#field">땅의 기록</a><a href="#installation">전시 전경</a></nav>
   </div>
 </header>
 
@@ -345,10 +374,13 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
 
 <section class="section wrap" id="artist" aria-labelledby="h-artist">
   <div class="sh"><span class="sh-no">03</span><h2 class="sh-t" id="h-artist">작가 소개</h2><span class="sh-en">Artist</span></div>
+  <div class="artist">
+  <figure class="portrait"><img src="img/portrait-m.jpg" srcset="img/portrait-s.jpg 512w, img/portrait-m.jpg 960w, img/portrait-l.jpg 1495w" sizes="(min-width: 760px) 240px, min(352px, calc(100vw - 32px))" width="960" height="1200" loading="lazy" decoding="async" alt="창가에 서서 웃고 있는 작가 이인실. 짙은 재킷에 회색 터틀넥, 둥근 안경을 썼다."><figcaption>작가 이인실, 2026</figcaption></figure>
   <div class="prose" style="margin-top:0">
     <p>이인실(b.1981)은 건축 엔지니어에서 출발해 회화로 작업을 확장해 온 작가다. 한국과 미국에서 건축을 공부하고 17년간 건축 엔지니어로 일하며 길러 온 구조적 시선과 재료 감각으로, 멀리서 품는 관념(Solid)과 가까이에서 드러나는 실재(Hidden) 사이의 경계를 탐구한다. 먹과 수채, 목탄, 유화, 알코올잉크에서 건축 재료로 쌓은 부조와 디지털 영상에 이르기까지 매체의 폭을 넓혀 왔다.</p>
     <p>2025년 첫 개인전 《Breathing Boundaries(숨쉬는 경계)》(몽고트 갤러리)를 열었고, 2026년 갤러리 이트리움 Discovery Artist로 선정되어 기획초청전 《INSIDE &amp; OUTSIDE》 Part 1 ‘Beyond City in Bag’을 가졌다. 2026년 대한민국현대미술대전(KMAF) 특선과 아트코리아 국제미술대전 한국미술국제교류협회 이사장상을 수상했다.</p>
     <p>작가는 경계를 규정하지 않고 재료와 기법을 한정하지 않으며, 미술과 건축 사이를 오가는 실험을 이어 갈 계획이다. 「봉투 속 도시」 연작을 따라 도시마다 관념과 실재를 마주 세우고, 그 사이에서 찾은 숨쉬는 경계의 원리를 다양한 방식으로 풀어낼 예정이다.</p>
+  </div>
   </div>
   <details class="en-block"><summary>English</summary><div class="inner">
     <p>Insil Lee (b. 1981) moved from architectural engineering into painting. After studying architecture in Korea and the United States, she worked as an architectural engineer for seventeen years, and from the structural eye and feel for materials gained there she explores the boundary between the idea held from afar (Solid) and the reality revealed up close (Hidden). Her media range from ink, watercolor, charcoal, oil and alcohol ink to reliefs built from construction materials and digital video.</p>
@@ -362,19 +394,19 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
   <ul class="works">
     <li><a class="zoom" href="img/winter-l.jpg" data-m="img/winter-m.jpg" data-group="works" data-title="Matterhorn I_Winter" data-meta="2024 · 캔버스에 잉크·유화 · 130×80cm (60호)" data-sheet="#winter"><img src="img/winter-m.jpg" srcset="img/winter-s.jpg 640w, img/winter-m.jpg 1200w, img/winter-l.jpg 2400w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="738" loading="lazy" decoding="async" alt="Matterhorn I_Winter"></a>
       <div class="wc"><span class="n">01</span><a class="t" href="#winter">Matterhorn I_Winter</a><span class="m">2024 · 잉크·유화 · 130×80cm</span></div></li>
-    <li><a class="zoom" href="img/hellvalley-l.jpg" data-m="img/hellvalley-m.jpg" data-group="works" data-title="Matterhorn II_Hell Valley (지옥계곡)" data-meta="2023 · 캔버스에 잉크·유화 · 65×53cm (15호)" data-sheet="#hellvalley"><img src="img/hellvalley-m.jpg" srcset="img/hellvalley-s.jpg 640w, img/hellvalley-m.jpg 1200w, img/hellvalley-l.jpg 2400w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="974" loading="lazy" decoding="async" alt="Matterhorn II_Hell Valley 지옥계곡"></a>
+    <li><a class="zoom" href="img/hell26-l.jpg" data-m="img/hell26-m.jpg" data-group="works" data-title="Matterhorn II_Hell Valley (지옥계곡)" data-meta="2023 · 캔버스에 잉크·유화 · 65×53cm (15호)" data-sheet="#hellvalley"><img src="img/hell26-m.jpg" srcset="img/hell26-s.jpg 640w, img/hell26-m.jpg 1200w, img/hell26-l.jpg 1800w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="992" loading="lazy" decoding="async" alt="Matterhorn II_Hell Valley 지옥계곡"></a>
       <div class="wc"><span class="n">02</span><a class="t" href="#hellvalley">Matterhorn II_Hell Valley<small>지옥계곡</small></a><span class="m">2023 · 잉크·유화 · 65×53cm</span></div></li>
-    <li><a class="zoom" href="img/eagle-l.jpg" data-m="img/eagle-m.jpg" data-group="works" data-title="Matterhorn III_Eagle’s Rebirth (독수리 환생)" data-meta="2025 (2026년 재작업) · 캔버스에 잉크·유화 · 80×130cm (60호)" data-sheet="#eagle"><img src="img/eagle-m.jpg" srcset="img/eagle-s.jpg 390w, img/eagle-m.jpg 731w, img/eagle-l.jpg 1463w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="731" height="1200" loading="lazy" decoding="async" alt="Matterhorn III_Eagle’s Rebirth 독수리 환생"></a>
+    <li><a class="zoom" href="img/eagle26-l.jpg" data-m="img/eagle26-m.jpg" data-group="works" data-title="Matterhorn III_Eagle’s Rebirth (독수리 환생)" data-meta="2025 (2026년 재작업) · 캔버스에 잉크·유화 · 80×130cm (60호)" data-sheet="#eagle"><img src="img/eagle26-m.jpg" srcset="img/eagle26-s.jpg 404w, img/eagle26-m.jpg 758w, img/eagle26-l.jpg 1370w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="758" height="1200" loading="lazy" decoding="async" alt="Matterhorn III_Eagle’s Rebirth 독수리 환생"></a>
       <div class="wc"><span class="n">03</span><a class="t" href="#eagle">Matterhorn III_Eagle’s Rebirth<small>독수리 환생</small></a><span class="m">2025 (2026 재작업) · 잉크·유화 · 80×130cm</span></div></li>
     <li><a class="zoom" href="img/summer-l.jpg" data-m="img/summer-m.jpg" data-group="works" data-title="Matterhorn IV_Summer" data-meta="2026 · 캔버스에 잉크·유화 · 130×80cm (60호)" data-sheet="#summer"><img src="img/summer-m.jpg" srcset="img/summer-s.jpg 640w, img/summer-m.jpg 1200w, img/summer-l.jpg 2290w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="738" loading="lazy" decoding="async" alt="Matterhorn IV_Summer"></a>
       <div class="wc"><span class="n">04</span><a class="t" href="#summer">Matterhorn IV_Summer</a><span class="m">2026 · 잉크·유화 · 130×80cm</span></div></li>
-    <li><a class="zoom" href="img/physical-l.jpg" data-m="img/physical-m.jpg" data-group="works" data-title="Matterhorn Monolith_Physical 40" data-meta="2026 · 캔버스에 혼합재료 (핸디코트, 모델링 페이스트, 젤스톤, 규사, 에폭시 레진, 목탄, 한지, 먹) · 27.3×22cm (3호, 가로형) 각 × 40점" data-sheet="#physical"><img src="img/physical-m.jpg" srcset="img/physical-s.jpg 640w, img/physical-m.jpg 1200w, img/physical-l.jpg 2400w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="939" loading="lazy" decoding="async" alt="Matterhorn Monolith_Physical 40"></a>
+    <li><a class="zoom" href="img/p40wall-l.jpg" data-m="img/p40wall-m.jpg" data-group="works" data-title="Matterhorn Monolith_Physical 40" data-meta="2026 · 캔버스에 혼합재료 (핸디코트, 모델링 페이스트, 젤스톤, 규사, 에폭시 레진, 목탄, 한지, 먹) · 27.3×22cm (3호, 가로형) 각 × 40점" data-sheet="#physical"><img src="img/p40wall-m.jpg" srcset="img/p40wall-s.jpg 640w, img/p40wall-m.jpg 1200w, img/p40wall-l.jpg 2248w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="651" loading="lazy" decoding="async" alt="Matterhorn Monolith_Physical 40"></a>
       <div class="wc"><span class="n">05</span><a class="t" href="#physical">Matterhorn Monolith_Physical 40</a><span class="m">2026 · 혼합재료 부조 · 27.3×22cm × 40점</span></div></li>
     <li><a class="zoom" href="img/digital-1-l.jpg" data-m="img/digital-1-m.jpg" data-group="works" data-title="Matterhorn Monolith_Digital 01" data-meta="2026 · 혼합재료 부조 프레임, 11인치 태블릿, 단채널 디지털 영상 (흑백, 사운드, 4분 19초, 반복 재생) · 30×22cm (프레임 포함)" data-sheet="#digital"><img src="img/digital-1-m.jpg" srcset="img/digital-1-s.jpg 640w, img/digital-1-m.jpg 1200w, img/digital-1-l.jpg 2400w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="1200" height="900" loading="lazy" decoding="async" alt="Matterhorn Monolith_Digital 01"></a>
       <div class="wc"><span class="n">06</span><a class="t" href="#digital">Matterhorn Monolith_Digital 01</a><span class="m">2026 · 부조 프레임, 디지털 영상 · 30×22cm</span></div></li>
-    <li><a class="zoom mosaic" href="img/study-1-l.jpg" data-m="img/study-1-m.jpg" data-group="works" data-title="Matterhorn Monolith_Studies (1/4)" data-meta="2026 · 캔버스 천에 목탄, 액자 · 각 27.3×22cm (3호) × 4점 · 액자 포함 39.3×36cm (2점), 39.3×39.3cm (2점)" data-sheet="#studies" aria-label="Matterhorn Monolith_Studies, 네 점"><img src="img/study-1-s.jpg" width="640" height="480" loading="lazy" decoding="async" alt=""><img src="img/study-2-s.jpg" width="640" height="480" loading="lazy" decoding="async" alt=""><img src="img/study-3-s.jpg" width="640" height="480" loading="lazy" decoding="async" alt=""><img src="img/study-4-s.jpg" width="640" height="480" loading="lazy" decoding="async" alt=""></a>
+    <li><a class="zoom mosaic" href="img/study26-1-l.jpg" data-m="img/study26-1-m.jpg" data-group="works" data-title="Matterhorn Monolith_Studies (1/4)" data-meta="2026 · 캔버스 천에 목탄, 액자 · 각 27.3×22cm (3호) × 4점 · 액자 포함 39.3×36cm (2점), 39.3×39.3cm (2점)" data-sheet="#studies" aria-label="Matterhorn Monolith_Studies, 네 점"><img src="img/study26-1-s.jpg" width="640" height="640" loading="lazy" decoding="async" alt=""><img src="img/study26-2-s.jpg" width="640" height="640" loading="lazy" decoding="async" alt=""><img src="img/study26-3-s.jpg" width="640" height="640" loading="lazy" decoding="async" alt=""><img src="img/study26-4-s.jpg" width="640" height="640" loading="lazy" decoding="async" alt=""></a>
       <div class="wc"><span class="n">07</span><a class="t" href="#studies">Matterhorn Monolith_Studies</a><span class="m">2026 · 목탄 · 27.3×22cm × 4점<br>액자 포함 39.3×36cm, 39.3×39.3cm</span></div></li>
-    <li><a class="zoom" href="img/zermatt-l.jpg" data-m="img/zermatt-m.jpg" data-group="works" data-title="봉투 속 체르마트 Zermatt in Bag" data-meta="2026 · 장지에 먹·수채 · 50×65cm (15호)" data-sheet="#zermatt"><img src="img/zermatt-m.jpg" srcset="img/zermatt-s.jpg 490w, img/zermatt-m.jpg 919w, img/zermatt-l.jpg 1837w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="919" height="1200" loading="lazy" decoding="async" alt="봉투 속 체르마트 Zermatt in Bag"></a>
+    <li><a class="zoom" href="img/zermatt26-l.jpg" data-m="img/zermatt26-m.jpg" data-group="works" data-title="봉투 속 체르마트 Zermatt in Bag" data-meta="2026 · 장지에 먹·수채 · 50×65cm (15호)" data-sheet="#zermatt"><img src="img/zermatt26-m.jpg" srcset="img/zermatt26-s.jpg 500w, img/zermatt26-m.jpg 937w, img/zermatt26-l.jpg 1210w" sizes="(min-width: 760px) 160px, calc(50vw - 40px)" width="937" height="1200" loading="lazy" decoding="async" alt="봉투 속 체르마트 Zermatt in Bag"></a>
       <div class="wc"><span class="n">08</span><a class="t" href="#zermatt">봉투 속 체르마트<small>Zermatt in Bag</small></a><span class="m">2026 · 장지에 먹·수채 · 50×65cm</span></div></li>
   </ul>
   <p class="size-note">이미지를 누르면 크게 볼 수 있고, 작품명을 누르면 해당 작품 소개로 이동합니다. 크기는 가로×세로이며 Physical 40과 Studies는 1점 기준, Digital 01은 프레임을 포함한 크기입니다.</p>
@@ -415,7 +447,7 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
       <h4 id="t-hell">Matterhorn II_Hell Valley<small>지옥계곡</small></h4>
       <p class="meta"><span>2023 · 캔버스에 잉크·유화 · 65×53cm (15호)</span><span>2023 · Ink and oil on canvas · 65×53cm</span></p>
     </div>
-    <figure class="plate"><a class="zoom" href="img/hellvalley-l.jpg" data-m="img/hellvalley-m.jpg" data-group="hellvalley" data-title="Matterhorn II_Hell Valley (지옥계곡)" data-meta="2023 · 캔버스에 잉크·유화 · 65×53cm (15호)"><img src="img/hellvalley-m.jpg" srcset="img/hellvalley-s.jpg 640w, img/hellvalley-m.jpg 1200w, img/hellvalley-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="974" loading="lazy" decoding="async" alt="붉고 흰 암벽 사이로 물길이 흐르는 협곡. 두터운 유화의 필치."></a></figure>
+    <figure class="plate"><a class="zoom" href="img/hell26-l.jpg" data-m="img/hell26-m.jpg" data-group="hellvalley" data-title="Matterhorn II_Hell Valley (지옥계곡)" data-meta="2023 · 캔버스에 잉크·유화 · 65×53cm (15호)"><img src="img/hell26-m.jpg" srcset="img/hell26-s.jpg 640w, img/hell26-m.jpg 1200w, img/hell26-l.jpg 1800w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="992" loading="lazy" decoding="async" alt="원목 액자에 담긴 그림. 붉고 흰 암벽 사이로 물길이 굽이쳐 흐르는 협곡을 두터운 유화의 필치로 그렸다."></a></figure>
     <div class="body">
       <p>그림 속 장소는 홋카이도 노보리베쓰의 지옥계곡, 땅에서 화산 증기가 피어오르는 협곡이다. 마테호른 연작 안에 놓이면 이 협곡은 마테호른 어딘가의 계곡처럼 읽힌다.</p>
       <p>멀리 떨어진 두 장소가 작가의 시선 안에서 경계 없이 이어지며, 장소의 이름보다 땅이 지닌 물질의 얼굴을 먼저 보게 한다.</p>
@@ -431,7 +463,7 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
       <h4 id="t-eagle">Matterhorn III_Eagle’s Rebirth<small>독수리 환생</small></h4>
       <p class="meta"><span>2025 (2026년 재작업) · 캔버스에 잉크·유화 · 80×130cm (60호)</span><span>2025 (reworked 2026) · Ink and oil on canvas · 80×130cm</span></p>
     </div>
-    <figure class="plate"><a class="zoom" href="img/eagle-l.jpg" data-m="img/eagle-m.jpg" data-group="eagle" data-title="Matterhorn III_Eagle’s Rebirth (독수리 환생)" data-meta="2025 (2026년 재작업) · 캔버스에 잉크·유화 · 80×130cm (60호)"><img src="img/eagle-m.jpg" srcset="img/eagle-s.jpg 390w, img/eagle-m.jpg 731w, img/eagle-l.jpg 1463w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="731" height="1200" loading="lazy" decoding="async" alt="눈 덮인 마테호른 위를 나는 두 마리의 독수리. 세로로 긴 화면."></a></figure>
+    <figure class="plate"><a class="zoom" href="img/eagle26-l.jpg" data-m="img/eagle26-m.jpg" data-group="eagle" data-title="Matterhorn III_Eagle’s Rebirth (독수리 환생)" data-meta="2025 (2026년 재작업) · 캔버스에 잉크·유화 · 80×130cm (60호)"><img src="img/eagle26-m.jpg" srcset="img/eagle26-s.jpg 404w, img/eagle26-m.jpg 758w, img/eagle26-l.jpg 1370w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="758" height="1200" loading="lazy" decoding="async" alt="눈 덮인 마테호른 위를 나는 두 마리의 독수리. 세로로 긴 화면."></a></figure>
     <div class="body">
       <p>독수리는 일흔 해 가까이 산다고 전해진다. 마흔 무렵 부리가 굽고 깃털이 무거워지면 홀로 높은 산에 올라 낡은 부리와 발톱, 깃털을 뽑아내고 새로 돋기를 기다린다는 이야기가 있다.</p>
       <p>마테호른 설산 위를 나는 두 마리 독수리는 엔지니어로서의 경력을 지나 작가로 다시 태어난 작가 자신의 이야기다. 2025년에 완성한 그림을 2026년 다시 손보아 마무리했으니, 그림 또한 한 번 더 태어난 셈이다.</p>
@@ -485,22 +517,57 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
       <h4 id="t-physical">Matterhorn Monolith_Physical 40</h4>
       <p class="meta"><span>2026 · 캔버스에 혼합재료 (핸디코트, 모델링 페이스트, 젤스톤, 규사, 에폭시 레진, 목탄, 한지, 먹) · 27.3×22cm (3호, 가로형) 각 × 40점</span><span>2026 · Mixed media on canvas (joint compound, modeling paste, gel stone, silica sand, epoxy resin, charcoal, hanji, ink) · 27.3×22cm each (landscape), 40 pieces</span></p>
     </div>
-    <figure class="plate"><a class="zoom" href="img/physical-l.jpg" data-m="img/physical-m.jpg" data-group="physical" data-title="Matterhorn Monolith_Physical 40" data-meta="2026 · 캔버스에 혼합재료 · 27.3×22cm × 40점"><img src="img/physical-m.jpg" srcset="img/physical-s.jpg 640w, img/physical-m.jpg 1200w, img/physical-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="939" loading="lazy" decoding="async" alt="Physical 40의 부조 캔버스들을 격자로 놓고 위에서 찍은 흑백 사진. 눈, 물길, 암석의 결이 칸마다 다르다."></a></figure>
+    <figure class="plate"><a class="zoom" href="img/p40wall-l.jpg" data-m="img/p40wall-m.jpg" data-group="physical" data-title="Matterhorn Monolith_Physical 40" data-meta="전시 전경 · CICA 미술관 Gallery 3A, 2026"><img src="img/p40wall-m.jpg" srcset="img/p40wall-s.jpg 640w, img/p40wall-m.jpg 1200w, img/p40wall-l.jpg 2248w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="651" loading="lazy" decoding="async" alt="흰 벽에 가로 8점, 세로 5줄로 걸린 40점의 부조. 위쪽 줄은 눈처럼 희고, 아래로 갈수록 짙은 암석과 호수처럼 고인 레진이 드러난다."></a><figcaption>전시장에 걸린 40점. CICA 미술관 Gallery 3A</figcaption></figure>
     <div class="body">
       <p>케이블카로 해발 약 4,000m를 오르내리며 마주한 땅을 3호 캔버스 40점 위에 부조로 쌓아 올렸다. 만년설과 녹아내리는 눈, 드러난 암석, 다시 자라난 초원까지 고도마다 다른 땅이 여덟 가지 재료로 한 겹씩 쌓였다.</p>
       <p>핸디코트, 규사, 에폭시 레진처럼 벽과 바닥을 짓는 건축 재료와 모델링 페이스트, 젤스톤, 목탄, 한지, 먹 같은 미술 재료가 한 화면에서 만난다.</p>
       <p>멀리서는 하나의 상징적인 산이지만, 가까이에서는 한 점 한 점이 저마다 다른 물질과 표정을 지닌다.</p>
     </div>
-    <div class="sub" aria-labelledby="h-relief">
-      <div class="sub-h"><b id="h-relief">가까이 본 다섯 점</b><span>Details</span></div>
-      <div class="reliefs">
-        <figure><a class="zoom" href="img/relief-1-l.jpg" data-m="img/relief-1-m.jpg" data-group="relief" data-title="Physical 40 · 부분 (1/5)" data-meta="작업실에서 촬영"><img src="img/relief-1-m.jpg" srcset="img/relief-1-s.jpg 640w, img/relief-1-m.jpg 1200w, img/relief-1-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="957" loading="lazy" decoding="async" alt="하얀 표면에 계단처럼 층진 결과 구겨진 주름이 있는 부조"></a></figure>
-        <figure><a class="zoom" href="img/relief-2-l.jpg" data-m="img/relief-2-m.jpg" data-group="relief" data-title="Physical 40 · 부분 (2/5)" data-meta="작업실에서 촬영"><img src="img/relief-2-m.jpg" srcset="img/relief-2-s.jpg 640w, img/relief-2-m.jpg 1200w, img/relief-2-l.jpg 2400w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="967" loading="lazy" decoding="async" alt="왼쪽은 어둡게 구겨진 면, 오른쪽은 비스듬히 흘러내린 하얀 결이 만나는 부조"></a></figure>
-        <figure><a class="zoom" href="img/relief-3-l.jpg" data-m="img/relief-3-m.jpg" data-group="relief" data-title="Physical 40 · 부분 (3/5)" data-meta="작업실에서 촬영"><img src="img/relief-3-m.jpg" srcset="img/relief-3-s.jpg 640w, img/relief-3-m.jpg 1200w, img/relief-3-l.jpg 2371w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="961" loading="lazy" decoding="async" alt="짙은 회색 암석 같은 면 위로 윤기 나는 표면이 덮인 부조"></a></figure>
-        <figure><a class="zoom" href="img/relief-4-l.jpg" data-m="img/relief-4-m.jpg" data-group="relief" data-title="Physical 40 · 부분 (4/5)" data-meta="작업실에서 촬영"><img src="img/relief-4-m.jpg" srcset="img/relief-4-s.jpg 640w, img/relief-4-m.jpg 1200w, img/relief-4-l.jpg 2360w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="976" loading="lazy" decoding="async" alt="회색 암석 같은 면 위로 흰 조각들이 흩어진 부조"></a></figure>
-        <figure><a class="zoom" href="img/relief-5-l.jpg" data-m="img/relief-5-m.jpg" data-group="relief" data-title="Physical 40 · 부분 (5/5)" data-meta="작업실에서 촬영"><img src="img/relief-5-m.jpg" srcset="img/relief-5-s.jpg 640w, img/relief-5-m.jpg 1200w, img/relief-5-l.jpg 2258w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="942" loading="lazy" decoding="async" alt="푸른 회색의 결이 비스듬히 흐르고 사이사이 어두운 덩어리가 솟은 부조"></a></figure>
-      </div>
-      <p class="cap">작업실에서 촬영한 부분. 구겨진 주름, 흘러내린 결, 윤기 있는 표면, 거친 입자가 점마다 다르다.</p>
+    <div class="sub" aria-labelledby="h-p40">
+      <div class="sub-h"><b id="h-p40">40점, 벽에 걸린 그대로</b><span>The 40 pieces as hung</span></div>
+      <ol class="p40">
+        <li><a class="zoom" href="img/p40-01-l.jpg" data-m="img/p40-01-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 첫째 줄, 왼쪽에서 첫째 · 27.3×22cm"><img src="img/p40-01-t.jpg" width="320" height="260" loading="lazy" decoding="async" alt="위에서 첫째 줄, 왼쪽에서 첫째"></a></li>
+        <li><a class="zoom" href="img/p40-02-l.jpg" data-m="img/p40-02-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 첫째 줄, 왼쪽에서 둘째 · 27.3×22cm"><img src="img/p40-02-t.jpg" width="320" height="257" loading="lazy" decoding="async" alt="위에서 첫째 줄, 왼쪽에서 둘째"></a></li>
+        <li><a class="zoom" href="img/p40-03-l.jpg" data-m="img/p40-03-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 첫째 줄, 왼쪽에서 셋째 · 27.3×22cm"><img src="img/p40-03-t.jpg" width="320" height="256" loading="lazy" decoding="async" alt="위에서 첫째 줄, 왼쪽에서 셋째"></a></li>
+        <li><a class="zoom" href="img/p40-04-l.jpg" data-m="img/p40-04-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 첫째 줄, 왼쪽에서 넷째 · 27.3×22cm"><img src="img/p40-04-t.jpg" width="320" height="257" loading="lazy" decoding="async" alt="위에서 첫째 줄, 왼쪽에서 넷째"></a></li>
+        <li><a class="zoom" href="img/p40-05-l.jpg" data-m="img/p40-05-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 첫째 줄, 왼쪽에서 다섯째 · 27.3×22cm"><img src="img/p40-05-t.jpg" width="320" height="257" loading="lazy" decoding="async" alt="위에서 첫째 줄, 왼쪽에서 다섯째"></a></li>
+        <li><a class="zoom" href="img/p40-06-l.jpg" data-m="img/p40-06-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 첫째 줄, 왼쪽에서 여섯째 · 27.3×22cm"><img src="img/p40-06-t.jpg" width="320" height="259" loading="lazy" decoding="async" alt="위에서 첫째 줄, 왼쪽에서 여섯째"></a></li>
+        <li><a class="zoom" href="img/p40-07-l.jpg" data-m="img/p40-07-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 첫째 줄, 왼쪽에서 일곱째 · 27.3×22cm"><img src="img/p40-07-t.jpg" width="320" height="262" loading="lazy" decoding="async" alt="위에서 첫째 줄, 왼쪽에서 일곱째"></a></li>
+        <li><a class="zoom" href="img/p40-08-l.jpg" data-m="img/p40-08-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 첫째 줄, 왼쪽에서 여덟째 · 27.3×22cm"><img src="img/p40-08-t.jpg" width="320" height="264" loading="lazy" decoding="async" alt="위에서 첫째 줄, 왼쪽에서 여덟째"></a></li>
+        <li><a class="zoom" href="img/p40-09-l.jpg" data-m="img/p40-09-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 둘째 줄, 왼쪽에서 첫째 · 27.3×22cm"><img src="img/p40-09-t.jpg" width="320" height="255" loading="lazy" decoding="async" alt="위에서 둘째 줄, 왼쪽에서 첫째"></a></li>
+        <li><a class="zoom" href="img/p40-10-l.jpg" data-m="img/p40-10-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 둘째 줄, 왼쪽에서 둘째 · 27.3×22cm"><img src="img/p40-10-t.jpg" width="320" height="254" loading="lazy" decoding="async" alt="위에서 둘째 줄, 왼쪽에서 둘째"></a></li>
+        <li><a class="zoom" href="img/p40-11-l.jpg" data-m="img/p40-11-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 둘째 줄, 왼쪽에서 셋째 · 27.3×22cm"><img src="img/p40-11-t.jpg" width="320" height="254" loading="lazy" decoding="async" alt="위에서 둘째 줄, 왼쪽에서 셋째"></a></li>
+        <li><a class="zoom" href="img/p40-12-l.jpg" data-m="img/p40-12-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 둘째 줄, 왼쪽에서 넷째 · 27.3×22cm"><img src="img/p40-12-t.jpg" width="320" height="256" loading="lazy" decoding="async" alt="위에서 둘째 줄, 왼쪽에서 넷째"></a></li>
+        <li><a class="zoom" href="img/p40-13-l.jpg" data-m="img/p40-13-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 둘째 줄, 왼쪽에서 다섯째 · 27.3×22cm"><img src="img/p40-13-t.jpg" width="320" height="255" loading="lazy" decoding="async" alt="위에서 둘째 줄, 왼쪽에서 다섯째"></a></li>
+        <li><a class="zoom" href="img/p40-14-l.jpg" data-m="img/p40-14-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 둘째 줄, 왼쪽에서 여섯째 · 27.3×22cm"><img src="img/p40-14-t.jpg" width="320" height="255" loading="lazy" decoding="async" alt="위에서 둘째 줄, 왼쪽에서 여섯째"></a></li>
+        <li><a class="zoom" href="img/p40-15-l.jpg" data-m="img/p40-15-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 둘째 줄, 왼쪽에서 일곱째 · 27.3×22cm"><img src="img/p40-15-t.jpg" width="320" height="258" loading="lazy" decoding="async" alt="위에서 둘째 줄, 왼쪽에서 일곱째"></a></li>
+        <li><a class="zoom" href="img/p40-16-l.jpg" data-m="img/p40-16-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 둘째 줄, 왼쪽에서 여덟째 · 27.3×22cm"><img src="img/p40-16-t.jpg" width="320" height="256" loading="lazy" decoding="async" alt="위에서 둘째 줄, 왼쪽에서 여덟째"></a></li>
+        <li><a class="zoom" href="img/p40-17-l.jpg" data-m="img/p40-17-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 셋째 줄, 왼쪽에서 첫째 · 27.3×22cm"><img src="img/p40-17-t.jpg" width="320" height="260" loading="lazy" decoding="async" alt="위에서 셋째 줄, 왼쪽에서 첫째"></a></li>
+        <li><a class="zoom" href="img/p40-18-l.jpg" data-m="img/p40-18-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 셋째 줄, 왼쪽에서 둘째 · 27.3×22cm"><img src="img/p40-18-t.jpg" width="320" height="260" loading="lazy" decoding="async" alt="위에서 셋째 줄, 왼쪽에서 둘째"></a></li>
+        <li><a class="zoom" href="img/p40-19-l.jpg" data-m="img/p40-19-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 셋째 줄, 왼쪽에서 셋째 · 27.3×22cm"><img src="img/p40-19-t.jpg" width="320" height="260" loading="lazy" decoding="async" alt="위에서 셋째 줄, 왼쪽에서 셋째"></a></li>
+        <li><a class="zoom" href="img/p40-20-l.jpg" data-m="img/p40-20-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 셋째 줄, 왼쪽에서 넷째 · 27.3×22cm"><img src="img/p40-20-t.jpg" width="320" height="255" loading="lazy" decoding="async" alt="위에서 셋째 줄, 왼쪽에서 넷째"></a></li>
+        <li><a class="zoom" href="img/p40-21-l.jpg" data-m="img/p40-21-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 셋째 줄, 왼쪽에서 다섯째 · 27.3×22cm"><img src="img/p40-21-t.jpg" width="320" height="256" loading="lazy" decoding="async" alt="위에서 셋째 줄, 왼쪽에서 다섯째"></a></li>
+        <li><a class="zoom" href="img/p40-22-l.jpg" data-m="img/p40-22-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 셋째 줄, 왼쪽에서 여섯째 · 27.3×22cm"><img src="img/p40-22-t.jpg" width="320" height="258" loading="lazy" decoding="async" alt="위에서 셋째 줄, 왼쪽에서 여섯째"></a></li>
+        <li><a class="zoom" href="img/p40-23-l.jpg" data-m="img/p40-23-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 셋째 줄, 왼쪽에서 일곱째 · 27.3×22cm"><img src="img/p40-23-t.jpg" width="320" height="258" loading="lazy" decoding="async" alt="위에서 셋째 줄, 왼쪽에서 일곱째"></a></li>
+        <li><a class="zoom" href="img/p40-24-l.jpg" data-m="img/p40-24-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 셋째 줄, 왼쪽에서 여덟째 · 27.3×22cm"><img src="img/p40-24-t.jpg" width="320" height="258" loading="lazy" decoding="async" alt="위에서 셋째 줄, 왼쪽에서 여덟째"></a></li>
+        <li><a class="zoom" href="img/p40-25-l.jpg" data-m="img/p40-25-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 넷째 줄, 왼쪽에서 첫째 · 27.3×22cm"><img src="img/p40-25-t.jpg" width="320" height="257" loading="lazy" decoding="async" alt="위에서 넷째 줄, 왼쪽에서 첫째"></a></li>
+        <li><a class="zoom" href="img/p40-26-l.jpg" data-m="img/p40-26-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 넷째 줄, 왼쪽에서 둘째 · 27.3×22cm"><img src="img/p40-26-t.jpg" width="320" height="255" loading="lazy" decoding="async" alt="위에서 넷째 줄, 왼쪽에서 둘째"></a></li>
+        <li><a class="zoom" href="img/p40-27-l.jpg" data-m="img/p40-27-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 넷째 줄, 왼쪽에서 셋째 · 27.3×22cm"><img src="img/p40-27-t.jpg" width="320" height="258" loading="lazy" decoding="async" alt="위에서 넷째 줄, 왼쪽에서 셋째"></a></li>
+        <li><a class="zoom" href="img/p40-28-l.jpg" data-m="img/p40-28-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 넷째 줄, 왼쪽에서 넷째 · 27.3×22cm"><img src="img/p40-28-t.jpg" width="320" height="260" loading="lazy" decoding="async" alt="위에서 넷째 줄, 왼쪽에서 넷째"></a></li>
+        <li><a class="zoom" href="img/p40-29-l.jpg" data-m="img/p40-29-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 넷째 줄, 왼쪽에서 다섯째 · 27.3×22cm"><img src="img/p40-29-t.jpg" width="320" height="255" loading="lazy" decoding="async" alt="위에서 넷째 줄, 왼쪽에서 다섯째"></a></li>
+        <li><a class="zoom" href="img/p40-30-l.jpg" data-m="img/p40-30-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 넷째 줄, 왼쪽에서 여섯째 · 27.3×22cm"><img src="img/p40-30-t.jpg" width="320" height="256" loading="lazy" decoding="async" alt="위에서 넷째 줄, 왼쪽에서 여섯째"></a></li>
+        <li><a class="zoom" href="img/p40-31-l.jpg" data-m="img/p40-31-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 넷째 줄, 왼쪽에서 일곱째 · 27.3×22cm"><img src="img/p40-31-t.jpg" width="320" height="258" loading="lazy" decoding="async" alt="위에서 넷째 줄, 왼쪽에서 일곱째"></a></li>
+        <li><a class="zoom" href="img/p40-32-l.jpg" data-m="img/p40-32-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 넷째 줄, 왼쪽에서 여덟째 · 27.3×22cm"><img src="img/p40-32-t.jpg" width="320" height="256" loading="lazy" decoding="async" alt="위에서 넷째 줄, 왼쪽에서 여덟째"></a></li>
+        <li><a class="zoom" href="img/p40-33-l.jpg" data-m="img/p40-33-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 다섯째 줄, 왼쪽에서 첫째 · 27.3×22cm"><img src="img/p40-33-t.jpg" width="320" height="257" loading="lazy" decoding="async" alt="위에서 다섯째 줄, 왼쪽에서 첫째"></a></li>
+        <li><a class="zoom" href="img/p40-34-l.jpg" data-m="img/p40-34-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 다섯째 줄, 왼쪽에서 둘째 · 27.3×22cm"><img src="img/p40-34-t.jpg" width="320" height="259" loading="lazy" decoding="async" alt="위에서 다섯째 줄, 왼쪽에서 둘째"></a></li>
+        <li><a class="zoom" href="img/p40-35-l.jpg" data-m="img/p40-35-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 다섯째 줄, 왼쪽에서 셋째 · 27.3×22cm"><img src="img/p40-35-t.jpg" width="320" height="257" loading="lazy" decoding="async" alt="위에서 다섯째 줄, 왼쪽에서 셋째"></a></li>
+        <li><a class="zoom" href="img/p40-36-l.jpg" data-m="img/p40-36-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 다섯째 줄, 왼쪽에서 넷째 · 27.3×22cm"><img src="img/p40-36-t.jpg" width="320" height="256" loading="lazy" decoding="async" alt="위에서 다섯째 줄, 왼쪽에서 넷째"></a></li>
+        <li><a class="zoom" href="img/p40-37-l.jpg" data-m="img/p40-37-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 다섯째 줄, 왼쪽에서 다섯째 · 27.3×22cm"><img src="img/p40-37-t.jpg" width="320" height="255" loading="lazy" decoding="async" alt="위에서 다섯째 줄, 왼쪽에서 다섯째"></a></li>
+        <li><a class="zoom" href="img/p40-38-l.jpg" data-m="img/p40-38-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 다섯째 줄, 왼쪽에서 여섯째 · 27.3×22cm"><img src="img/p40-38-t.jpg" width="320" height="258" loading="lazy" decoding="async" alt="위에서 다섯째 줄, 왼쪽에서 여섯째"></a></li>
+        <li><a class="zoom" href="img/p40-39-l.jpg" data-m="img/p40-39-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 다섯째 줄, 왼쪽에서 일곱째 · 27.3×22cm"><img src="img/p40-39-t.jpg" width="320" height="259" loading="lazy" decoding="async" alt="위에서 다섯째 줄, 왼쪽에서 일곱째"></a></li>
+        <li><a class="zoom" href="img/p40-40-l.jpg" data-m="img/p40-40-m.jpg" data-group="p40" data-title="Matterhorn Monolith_Physical 40" data-meta="위에서 다섯째 줄, 왼쪽에서 여덟째 · 27.3×22cm"><img src="img/p40-40-t.jpg" width="320" height="256" loading="lazy" decoding="async" alt="위에서 다섯째 줄, 왼쪽에서 여덟째"></a></li>
+      </ol>
+      <p class="cap">전시장 벽의 배치(가로 8점 × 세로 5줄) 그대로 놓았습니다. 한 점을 누르면 크게 보이고, 좌우로 넘기며 40점을 차례로 볼 수 있습니다.</p>
     </div>
     <details class="en-block"><summary>English</summary><div class="inner"><p>Forty small relief canvases rebuild the ground met on the cable-car journey to about 4,000 meters and back: eternal snow, melting snow, bare rock, meadows growing again. Eight materials are layered one over another. Construction materials that build walls and floors, joint compound, silica sand and epoxy resin, meet the art materials of modeling paste, gel stone, charcoal, hanji and ink on a single surface. From afar, one symbolic mountain; up close, each piece holds its own matter and expression.</p></div></details>
     <a class="back" href="#works">↑ 출품작 목록</a>
@@ -541,11 +608,12 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
       <h4 id="t-studies">Matterhorn Monolith_Studies</h4>
       <p class="meta"><span>2026 · 캔버스 천에 목탄, 액자 · 각 27.3×22cm (3호) × 4점</span><span class="sz">액자 포함 39.3×36cm (2점) · 39.3×39.3cm (2점)</span><span>2026 · Charcoal on canvas cloth, framed · 27.3×22cm each, 4 pieces · framed 39.3×36cm (2) and 39.3×39.3cm (2)</span></p>
     </div>
+    <figure class="plate"><a class="zoom" href="img/studies26-set-l.jpg" data-m="img/studies26-set-m.jpg" data-group="studies-set" data-title="Matterhorn Monolith_Studies" data-meta="전시 전경 · 액자 4점"><img src="img/studies26-set-m.jpg" srcset="img/studies26-set-s.jpg 640w, img/studies26-set-m.jpg 1200w, img/studies26-set-l.jpg 1390w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="1191" loading="lazy" decoding="async" alt="흰 벽에 두 줄로 걸린 액자 네 점. 위의 두 점은 짙은 갈색 액자, 아래 두 점은 밝은 원목 액자다."></a><figcaption>전시장에 걸린 네 점</figcaption></figure>
     <div class="grid2" role="group" aria-label="목탄 습작 네 점">
-      <figure><a class="zoom" href="img/study-1-l.jpg" data-m="img/study-1-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (1/4) · 만년설의 봉우리" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study-1-m.jpg" srcset="img/study-1-s.jpg 640w, img/study-1-m.jpg 1200w, img/study-1-l.jpg 1448w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="습작 1. 눈 덮인 봉우리와 그 아래 어두운 능선"></a><figcaption>01 · 만년설의 봉우리</figcaption></figure>
-      <figure><a class="zoom" href="img/study-2-l.jpg" data-m="img/study-2-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (2/4) · 눈이 녹은 비탈" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study-2-m.jpg" srcset="img/study-2-s.jpg 640w, img/study-2-m.jpg 1200w, img/study-2-l.jpg 1448w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="습작 2. 어둡게 칠한 비탈 위로 녹아 흘러내린 눈의 자국"></a><figcaption>02 · 눈이 녹은 비탈</figcaption></figure>
-      <figure><a class="zoom" href="img/study-3-l.jpg" data-m="img/study-3-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (3/4) · 갈라져 흐르는 물길" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study-3-m.jpg" srcset="img/study-3-s.jpg 640w, img/study-3-m.jpg 1200w, img/study-3-l.jpg 1448w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="습작 3. 여러 갈래로 갈라지는 밝은 물길"></a><figcaption>03 · 갈라져 흐르는 물길</figcaption></figure>
-      <figure><a class="zoom" href="img/study-4-l.jpg" data-m="img/study-4-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (4/4) · 깊은 계곡" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study-4-m.jpg" srcset="img/study-4-s.jpg 640w, img/study-4-m.jpg 1200w, img/study-4-l.jpg 1448w" sizes="(min-width: 760px) 346px, calc(50vw - 20px)" width="1200" height="900" loading="lazy" decoding="async" alt="습작 4. 숲으로 덮인 비탈 사이의 깊은 계곡"></a><figcaption>04 · 깊은 계곡</figcaption></figure>
+      <figure><a class="zoom" href="img/study26-1-l.jpg" data-m="img/study26-1-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (1/4) · 만년설의 봉우리" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study26-1-m.jpg" srcset="img/study26-1-s.jpg 640w, img/study26-1-m.jpg 1200w, img/study26-1-l.jpg 1867w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="1200" height="1200" loading="lazy" decoding="async" alt="습작 1. 원목 액자 속, 눈 덮인 봉우리와 그 아래 어두운 능선"></a><figcaption>01 · 만년설의 봉우리</figcaption></figure>
+      <figure><a class="zoom" href="img/study26-2-l.jpg" data-m="img/study26-2-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (2/4) · 눈이 녹은 비탈" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study26-2-m.jpg" srcset="img/study26-2-s.jpg 640w, img/study26-2-m.jpg 1200w, img/study26-2-l.jpg 1867w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="1200" height="1200" loading="lazy" decoding="async" alt="습작 2. 원목 액자 속, 어둡게 칠한 비탈 위로 녹아 흘러내린 눈의 자국"></a><figcaption>02 · 눈이 녹은 비탈</figcaption></figure>
+      <figure><a class="zoom" href="img/study26-3-l.jpg" data-m="img/study26-3-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (3/4) · 갈라져 흐르는 물길" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study26-3-m.jpg" srcset="img/study26-3-s.jpg 640w, img/study26-3-m.jpg 1200w, img/study26-3-l.jpg 1867w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="1200" height="1200" loading="lazy" decoding="async" alt="습작 3. 짙은 갈색 액자 속, 여러 갈래로 갈라지는 밝은 물길"></a><figcaption>03 · 갈라져 흐르는 물길</figcaption></figure>
+      <figure><a class="zoom" href="img/study26-4-l.jpg" data-m="img/study26-4-m.jpg" data-group="studies" data-title="Matterhorn Monolith_Studies (4/4) · 깊은 계곡" data-meta="2026 · 캔버스 천에 목탄, 액자 · 27.3×22cm (3호)"><img src="img/study26-4-m.jpg" srcset="img/study26-4-s.jpg 640w, img/study26-4-m.jpg 1200w, img/study26-4-l.jpg 1867w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="1200" height="1200" loading="lazy" decoding="async" alt="습작 4. 짙은 갈색 액자 속, 숲으로 덮인 비탈 사이의 깊은 계곡"></a><figcaption>04 · 깊은 계곡</figcaption></figure>
     </div>
     <div class="body">
       <p>여러 물질을 두껍게 쌓은 「Physical 40」과 달리, 「Studies」는 캔버스 천 위에 목탄만으로 명암을 남긴 네 점의 습작이다. 만년설의 봉우리, 눈이 녹은 비탈, 갈라져 흐르는 물길, 깊은 계곡. 가장 단순한 재료로 그렸음에도 땅의 다양한 표정은 고스란히 드러난다.</p>
@@ -569,7 +637,7 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
       <h4 id="t-zermatt">봉투 속 체르마트<small>Zermatt in Bag</small></h4>
       <p class="meta"><span>2026 · 장지에 먹·수채 · 50×65cm (15호)</span><span>2026 · Ink and watercolor on jangji · 50×65cm</span></p>
     </div>
-    <figure class="plate"><a class="zoom" href="img/zermatt-l.jpg" data-m="img/zermatt-m.jpg" data-group="zermatt" data-title="봉투 속 체르마트 Zermatt in Bag" data-meta="2026 · 장지에 먹·수채 · 50×65cm (15호)"><img src="img/zermatt-m.jpg" srcset="img/zermatt-s.jpg 490w, img/zermatt-m.jpg 919w, img/zermatt-l.jpg 1837w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="919" height="1200" loading="lazy" decoding="async" alt="금융인의 손이 쥔 찢어진 종이봉투 틈으로 마테호른과 체르마트 마을이 보인다. 손목에는 시계와 커프스, 손가락에는 반지."></a></figure>
+    <figure class="plate"><a class="zoom" href="img/zermatt26-l.jpg" data-m="img/zermatt26-m.jpg" data-group="zermatt" data-title="봉투 속 체르마트 Zermatt in Bag" data-meta="2026 · 장지에 먹·수채 · 50×65cm (15호)"><img src="img/zermatt26-m.jpg" srcset="img/zermatt26-s.jpg 500w, img/zermatt26-m.jpg 937w, img/zermatt26-l.jpg 1210w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="937" height="1200" loading="lazy" decoding="async" alt="금융인의 손이 쥔 찢어진 종이봉투 틈으로 마테호른과 체르마트 마을이 보인다. 손목에는 시계와 커프스, 손가락에는 반지."></a></figure>
     <div class="body">
       <p>마테호른과 체르마트 하면 흔히 천혜의 자연, 가장 순수한 풍경을 떠올린다. 그러나 그 이면에는 ‘세계의 금고’라 불려 온 스위스 은행과, 검은 돈이 머무는 비밀 계좌의 역사가 있다.</p>
       <p>작가는 돈뭉치를 옮길 때 쓰이는 종이봉투를 그렸다. 찢어진 틈 사이로 마테호른과 체르마트의 풍경이 펼쳐지고, 그 봉투를 화려한 금융인의 손이 쥐고 있다.</p>
@@ -621,17 +689,46 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
   <p class="field-note">높은 곳에서 낮은 곳 순으로 놓았습니다. 사진을 누르면 촬영 고도와 함께 크게 볼 수 있습니다. 사진 이인실.</p>
 </section>
 
-<!-- 07 전시 전경: 11/10 설치 사진 촬영 후 사진을 넣고 주석을 풀어 공개
 <section class="section wrap" id="installation" aria-labelledby="h-install">
   <div class="sh"><span class="sh-no">07</span><h2 class="sh-t" id="h-install">전시 전경</h2><span class="sh-en">Installation View</span></div>
   <div class="install">
-    <figure class="wide"><div class="ph"><b>Installation view</b><span>CICA 미술관 Gallery 3A · 11월 10일 설치 후 공개</span></div></figure>
-    <figure><div class="ph"><b>Installation view</b><span>설치 후 공개</span></div></figure>
-    <figure><div class="ph"><b>Installation view</b><span>설치 후 공개</span></div></figure>
+    <figure class="wide"><a class="zoom" href="img/view-01-l.jpg" data-m="img/view-01-m.jpg" data-group="views" data-title="전시 전경 (1/8)" data-meta="「Physical 40」과 「Winter」·「Summer」 · CICA 미술관 Gallery 3A"><img src="img/view-01-m.jpg" srcset="img/view-01-s.jpg 640w, img/view-01-m.jpg 1200w, img/view-01-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="675" loading="lazy" decoding="async" alt="두 벽이 만나는 전시장 모서리. 왼쪽 벽에 40점의 부조가, 오른쪽 벽에 마테호른 그림 두 점이 걸려 있다."></a><figcaption>「Physical 40」과 「Winter」·「Summer」</figcaption></figure>
+    <figure><a class="zoom" href="img/view-02-l.jpg" data-m="img/view-02-m.jpg" data-group="views" data-title="전시 전경 (2/8)" data-meta="Gallery 3A 입구 · CICA 미술관 Gallery 3A"><img src="img/view-02-m.jpg" srcset="img/view-02-s.jpg 427w, img/view-02-m.jpg 800w, img/view-02-l.jpg 1600w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="전시장 입구 옆 벽에 붙은 전시 포스터와 3-A 표지."></a><figcaption>Gallery 3A 입구</figcaption></figure>
+    <figure><a class="zoom" href="img/view-03-l.jpg" data-m="img/view-03-m.jpg" data-group="views" data-title="전시 전경 (3/8)" data-meta="「Physical 40」 · CICA 미술관 Gallery 3A"><img src="img/view-03-m.jpg" srcset="img/view-03-s.jpg 427w, img/view-03-m.jpg 800w, img/view-03-l.jpg 1600w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="비스듬히 바라본 40점의 부조 벽. 창으로 빛이 들어온다."></a><figcaption>「Physical 40」</figcaption></figure>
+    <figure class="wide"><a class="zoom" href="img/view-04-l.jpg" data-m="img/view-04-m.jpg" data-group="views" data-title="전시 전경 (4/8)" data-meta="안쪽 벽의 「봉투 속 체르마트」·「Studies」·「Hell Valley」, 오른쪽의 「Eagle’s Rebirth」와 좌대 위 「Digital 01」 · CICA 미술관 Gallery 3A"><img src="img/view-04-m.jpg" srcset="img/view-04-s.jpg 640w, img/view-04-m.jpg 1200w, img/view-04-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="675" loading="lazy" decoding="async" alt="전시장 안쪽 벽에 봉투 그림, 액자 네 점, 협곡 그림이 걸려 있고, 오른쪽 벽에 독수리 그림, 창가 좌대 위에 영상 작품이 놓여 있다. 한 사람이 작품을 보고 있다."></a><figcaption>안쪽 벽의 「봉투 속 체르마트」·「Studies」·「Hell Valley」, 오른쪽의 「Eagle’s Rebirth」와 좌대 위 「Digital 01」</figcaption></figure>
+    <figure class="wide"><a class="zoom" href="img/view-05-l.jpg" data-m="img/view-05-m.jpg" data-group="views" data-title="전시 전경 (5/8)" data-meta="「Winter」와 「Summer」, 같은 산의 두 계절 · CICA 미술관 Gallery 3A"><img src="img/view-05-m.jpg" srcset="img/view-05-s.jpg 640w, img/view-05-m.jpg 1200w, img/view-05-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="675" loading="lazy" decoding="async" alt="나란히 걸린 겨울과 여름의 마테호른 그림. 오른쪽 문가에 관람객이 서 있다."></a><figcaption>「Winter」와 「Summer」, 같은 산의 두 계절</figcaption></figure>
+    <figure><a class="zoom" href="img/view-06-l.jpg" data-m="img/view-06-m.jpg" data-group="views" data-title="전시 전경 (6/8)" data-meta="「Studies」와 「Hell Valley」, 「Eagle’s Rebirth」 · CICA 미술관 Gallery 3A"><img src="img/view-06-m.jpg" srcset="img/view-06-s.jpg 427w, img/view-06-m.jpg 800w, img/view-06-l.jpg 1600w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="액자 네 점과 협곡 그림이 걸린 벽 너머로 독수리 그림이 보인다."></a><figcaption>「Studies」와 「Hell Valley」, 「Eagle’s Rebirth」</figcaption></figure>
+    <figure><a class="zoom" href="img/view-07-l.jpg" data-m="img/view-07-m.jpg" data-group="views" data-title="전시 전경 (7/8)" data-meta="「Studies」 네 점 · CICA 미술관 Gallery 3A"><img src="img/view-07-m.jpg" srcset="img/view-07-s.jpg 427w, img/view-07-m.jpg 800w, img/view-07-l.jpg 1601w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="두 줄로 걸린 목탄 습작 액자 네 점을 비스듬히 본 모습."></a><figcaption>「Studies」 네 점</figcaption></figure>
+    <figure class="wide"><a class="zoom" href="img/view-08-l.jpg" data-m="img/view-08-m.jpg" data-group="views" data-title="전시 전경 (8/8)" data-meta="「Physical 40」 부분 · CICA 미술관 Gallery 3A"><img src="img/view-08-m.jpg" srcset="img/view-08-s.jpg 640w, img/view-08-m.jpg 1200w, img/view-08-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="800" loading="lazy" decoding="async" alt="가까이서 비스듬히 본 부조들. 표면의 요철에 그림자가 진다."></a><figcaption>「Physical 40」 부분</figcaption></figure>
   </div>
-  <p class="cap" style="margin-top:.8rem">전시 전경 사진은 11월 10일 설치를 마친 뒤 공개됩니다.</p>
+  <p class="cap" style="margin-top:.8rem">CICA 미술관 Gallery 3A, 2026. 11. 사진을 누르면 크게 볼 수 있습니다.</p>
 </section>
--->
+
+<section class="section wrap" id="making" aria-labelledby="h-making">
+  <div class="sh"><span class="sh-no">08</span><h2 class="sh-t" id="h-making">설치와 야외 촬영</h2><span class="sh-en">Behind the Scenes</span></div>
+  <div class="sub first">
+    <div class="sub-h"><b>설치하던 날</b><span>Installation · 2026. 11. 10</span></div>
+    <p class="sub-d">40점의 순서는 바닥에 먼저 펼쳐 놓고 정했다. 그다음 레이저로 수평을 맞추며 한 줄씩 벽에 걸었다.</p>
+    <div class="install">
+      <figure class="wide"><a class="zoom" href="img/make-01-l.jpg" data-m="img/make-01-m.jpg" data-group="making" data-title="설치하던 날 (1/6)" data-meta="벽에 걸리기 전, 나란히 기대 선 「Winter」와 「Summer」 · 2026. 11. 10"><img src="img/make-01-m.jpg" srcset="img/make-01-s.jpg 640w, img/make-01-m.jpg 1200w, img/make-01-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="800" loading="lazy" decoding="async" alt="윤이 나는 바닥에 비친 채 벽에 기대 놓인 마테호른 그림 두 점."></a><figcaption>벽에 걸리기 전, 나란히 기대 선 「Winter」와 「Summer」</figcaption></figure>
+      <figure><a class="zoom" href="img/make-02-l.jpg" data-m="img/make-02-m.jpg" data-group="making" data-title="설치하던 날 (2/6)" data-meta="바닥에 40점을 펼쳐 놓고 순서를 정한다 · 2026. 11. 10"><img src="img/make-02-m.jpg" srcset="img/make-02-s.jpg 427w, img/make-02-m.jpg 800w, img/make-02-l.jpg 1524w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="작가가 바닥에 다섯 줄로 펼친 부조 캔버스들을 손으로 정리하고 있다."></a><figcaption>바닥에 40점을 펼쳐 놓고 순서를 정한다</figcaption></figure>
+      <figure><a class="zoom" href="img/make-03-l.jpg" data-m="img/make-03-m.jpg" data-group="making" data-title="설치하던 날 (3/6)" data-meta="한 점씩 자리를 바꿔 가며 맞춰 본다 · 2026. 11. 10"><img src="img/make-03-m.jpg" srcset="img/make-03-s.jpg 427w, img/make-03-m.jpg 800w, img/make-03-l.jpg 1538w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="바닥에 놓인 부조 캔버스 하나를 두 손으로 옮기는 모습."></a><figcaption>한 점씩 자리를 바꿔 가며 맞춰 본다</figcaption></figure>
+      <figure class="wide"><a class="zoom" href="img/make-04-l.jpg" data-m="img/make-04-m.jpg" data-group="making" data-title="설치하던 날 (4/6)" data-meta="정한 순서대로 한 줄씩 벽에 건다 · 2026. 11. 10"><img src="img/make-04-m.jpg" srcset="img/make-04-s.jpg 640w, img/make-04-m.jpg 1200w, img/make-04-l.jpg 2400w" sizes="(min-width: 760px) 704px, calc(100vw - 32px)" width="1200" height="800" loading="lazy" decoding="async" alt="설치 기사가 벽 앞에 앉아 넷째 줄의 부조를 걸고 있다. 앞에 레이저 수평기가 서 있다."></a><figcaption>정한 순서대로 한 줄씩 벽에 건다</figcaption></figure>
+      <figure><a class="zoom" href="img/make-05-l.jpg" data-m="img/make-05-m.jpg" data-group="making" data-title="설치하던 날 (5/6)" data-meta="레이저 수평선에 맞춰 한 점씩 고정한다 · 2026. 11. 10"><img src="img/make-05-m.jpg" srcset="img/make-05-s.jpg 427w, img/make-05-m.jpg 800w, img/make-05-l.jpg 1600w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="벽에 비친 초록색 레이저 선을 따라 부조 한 점을 고정하는 모습."></a><figcaption>레이저 수평선에 맞춰 한 점씩 고정한다</figcaption></figure>
+      <figure><a class="zoom" href="img/make-06-l.jpg" data-m="img/make-06-m.jpg" data-group="making" data-title="설치하던 날 (6/6)" data-meta="한 걸음 물러나 전체를 확인한다 · 2026. 11. 10"><img src="img/make-06-m.jpg" srcset="img/make-06-s.jpg 426w, img/make-06-m.jpg 800w, img/make-06-l.jpg 1599w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="작가가 레이저 수평기 너머로 벽에 걸린 부조들을 바라보고 있다."></a><figcaption>한 걸음 물러나 전체를 확인한다</figcaption></figure>
+    </div>
+  </div>
+  <div class="sub">
+    <div class="sub-h"><b>미술관 밖에서</b><span>Outdoors</span></div>
+    <p class="sub-d">작품 몇 점을 미술관 밖 소나무 아래로 옮겨 자연광 속에서 촬영했다.</p>
+    <div class="install">
+      <figure><a class="zoom" href="img/out-01-l.jpg" data-m="img/out-01-m.jpg" data-group="outdoors" data-title="미술관 밖에서 (1/4)" data-meta="「Winter」와 「Summer」 사이에 선 작가"><img src="img/out-01-m.jpg" srcset="img/out-01-s.jpg 426w, img/out-01-m.jpg 800w, img/out-01-l.jpg 1599w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="소나무 아래 두 점의 마테호른 그림 사이에 작가가 서 있다. 바닥에 솔잎이 깔려 있다."></a><figcaption>「Winter」와 「Summer」 사이에 선 작가</figcaption></figure>
+      <figure><a class="zoom" href="img/out-02-l.jpg" data-m="img/out-02-m.jpg" data-group="outdoors" data-title="미술관 밖에서 (2/4)" data-meta="소나무에 기대 놓은 「봉투 속 체르마트」"><img src="img/out-02-m.jpg" srcset="img/out-02-s.jpg 427w, img/out-02-m.jpg 800w, img/out-02-l.jpg 1600w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="햇빛이 비치는 소나무 밑동에 봉투 그림이 기대 서 있다."></a><figcaption>소나무에 기대 놓은 「봉투 속 체르마트」</figcaption></figure>
+      <figure><a class="zoom" href="img/out-03-l.jpg" data-m="img/out-03-m.jpg" data-group="outdoors" data-title="미술관 밖에서 (3/4)" data-meta="햇빛 아래 놓인 「Winter」와 「Summer」"><img src="img/out-03-m.jpg" srcset="img/out-03-s.jpg 427w, img/out-03-m.jpg 800w, img/out-03-l.jpg 1600w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="미술관 건물 앞 소나무 아래, 받침대 위에 놓인 마테호른 그림 두 점."></a><figcaption>햇빛 아래 놓인 「Winter」와 「Summer」</figcaption></figure>
+      <figure><a class="zoom" href="img/out-04-l.jpg" data-m="img/out-04-m.jpg" data-group="outdoors" data-title="미술관 밖에서 (4/4)" data-meta="작품을 고쳐 세우는 작가"><img src="img/out-04-m.jpg" srcset="img/out-04-s.jpg 427w, img/out-04-m.jpg 800w, img/out-04-l.jpg 1600w" sizes="(min-width: 760px) 348px, calc(50vw - 20px)" width="800" height="1200" loading="lazy" decoding="async" alt="잔디 위에 쪼그려 앉아 마테호른 그림을 바로 세우는 작가."></a><figcaption>작품을 고쳐 세우는 작가</figcaption></figure>
+    </div>
+  </div>
+</section>
 
 <section class="section wrap voice" id="voice" aria-labelledby="h-voice">
   <div class="sh"><span class="sh-no">—</span><h2 class="sh-t" id="h-voice">관객에게</h2><span class="sh-en">To You</span></div>
@@ -645,7 +742,7 @@ footer{padding-block:1.5rem 3rem; display:grid; gap:1.2rem}
 <footer class="wrap">
   <div class="foot-row">
     <p><b>Breathing Matter 숨쉬는 물질</b> · 이인실 개인전<br><span>2026. 11. 11 – 11. 15 · CICA 미술관 Gallery 3A, 김포</span></p>
-    <p><span>Instagram</span> @sillystudio2025</p>
+    <p><span>Instagram</span> <a href="https://www.instagram.com/sillystudio2025/" target="_blank" rel="noopener">@sillystudio2025</a></p>
   </div>
   <p class="copy">© 2026 이인실 Insil Lee · Sillystudio. 작품 이미지와 사진의 무단 사용을 금합니다.</p>
 </footer>
